@@ -1,0 +1,62 @@
+.breadcrumb {
+	position: relative;
+    padding: 0 0 30px !important;
+    margin: 0 0 30px !important;
+    background-color: transparent !important;
+	font-size: 14px;
+    line-height: 1.2;
+    span.divider{
+    	display: none;
+    }
+    span.icon-location{
+    	display: block;
+		color: #243341;
+        &:after{
+        	content:'\f041';
+            font-family: FontAwesome;
+            
+        }
+    }
+    li + li:before{
+    	content: '/ ';
+    	color: #b3b3b3;
+    }
+	> li {
+		padding: 2px 0;
+	}
+    .active{
+        color: #243341;
+    }
+    &:after{
+    	content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #ebebeb;                
+        bottom: 0;
+    }
+}
+.has-col-right .breadcrumb:after{
+	@include rtl-left(0);
+}
+.has-col-left .breadcrumb:after{
+    @include rtl-right(0);
+}
+.has-col-left.has-col-right .breadcrumb:after{
+	width: 100%;
+}
+.dark-bg {
+	li + li:before{
+    	content: '\f105';
+    	font-family: 'FontAwesome';
+    	color: #fff;
+    }
+	.breadcrumb {
+		padding: 0;
+		li > span[itemprop="name"],
+		> .active {
+			color: #fff;
+		}
+	}
+}

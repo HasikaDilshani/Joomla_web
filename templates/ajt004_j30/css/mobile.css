@@ -1,0 +1,5 @@
+nav select {display:none}
+@media screen and (max-width: 980px) {}
+@media screen and (max-width: 600px) {nav ul{ display: none; } nav select { display: inline; height:25px; width:200px; position:absolute; bottom:0px; left:50%; margin-left:-100px; }}	
+
+@media screen and (max-width: 480px) {.copy { float:none; text-align:center;}}

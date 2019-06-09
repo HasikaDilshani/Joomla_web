@@ -1,0 +1,43 @@
+
+$btn-primary-bg: #337ab7 !default;
+$btn-primary-bg-hover: #286090 !default;
+$headings-font-type:      false !default;
+$headings-standard-font-family:    false !default;
+$headings-google-font-family:      false !default;
+$headings-custom-font-family:      false !default;
+$headings-google-font-variant:		 false !default;
+
+.btn-primary{
+  @if $btn-primary-bg != false {background: $btn-primary-bg;}
+}
+section .btn-primary {
+  @if $btn-primary-bg != false {background-color: $btn-primary-bg;}
+}
+#eb .btn-primary{
+  @if $btn-primary-bg != false {background: $btn-primary-bg !important;}	
+  &:hover{
+  	@if $btn-primary-bg-hover != false {background: $btn-primary-bg-hover !important;}	
+  }
+}
+#es {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  @if $headings-font-type != false {
+	    @if ($headings-font-type == standard and $headings-standard-font-family != false){
+	      font-family: $headings-standard-font-family;
+	      @if $headings-font-weight != false {
+	        font-weight: $headings-font-weight;
+	      }
+	    }
+	    @if ($headings-font-type == google and $headings-google-font-family != false){
+	      font-family: $headings-google-font-family;
+	      @if $headings-google-font-variant != false {
+	        font-weight: $headings-google-font-variant;
+	      }
+	    }
+	    @if ($headings-font-type == custom and $headings-custom-font-family != false){
+	      font-family: $headings-custom-font-family;
+	    }
+	  }
+	}
+}

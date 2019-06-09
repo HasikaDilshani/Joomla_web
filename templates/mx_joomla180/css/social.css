@@ -1,0 +1,74 @@
+
+.item-social-icons {
+  display: block;
+  line-height: 27px;
+  position: relative;
+  float: right;
+}
+
+.item-social-icons > a {
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+  line-height: 27px;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  margin: 4px;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.item-social-icons > a > .fa{
+  font-size: 16px;
+  width: 100%;
+  margin-top: 6px;
+  text-indent: 4px;
+}
+
+.item-social-icons > a > .fa:hover {
+  color: #fff;
+}
+
+.item-social-icons > a {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1;
+}
+.item-social-icons > a {
+color: #999;
+background: none;
+}
+.item-social-icons > a:hover {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.item-social-icons > a.facebook:hover  {
+  background: #1565c0;
+}
+.item-social-icons > a.twitter:hover {
+  background: #42a5f5;
+}
+.item-social-icons > a.google:hover {
+  background: #e64a19;
+}
+.item-social-icons > a.pinterest:hover {
+  background: #ff1744;
+}
+.item-social-icons > a.linkedin:hover {
+  background: #448aff;
+}
+.item-social-icons > a.digg:hover {
+  background: #0066cc;
+}
+.item-social-icons > a.stumbleupon:hover {
+  background: #eb4924;
+}
+.item-social-icons > a.vk:hover {
+  background: #666;
+}

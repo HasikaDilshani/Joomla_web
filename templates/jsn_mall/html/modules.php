@@ -1,0 +1,288 @@
+<?php
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+
+defined('_JEXEC') or die;
+function modChrome_default($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', ''));
+	$icon 			= '';
+	if (preg_match('/^(.+)?(fa fa-[^\s]+)(.+)?$/', $headerClass, $match)) {
+		$headerClass = $match[1];
+		$icon .= $match[2];
+	}
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="module-style ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<div class="module-title"><' . $headerTag . ' class="box-title ' . $headerClass . '">';
+				if ($icon != '')
+				{
+					echo '<i class="'. $icon .'"></i>';
+				}
+				echo '<span>'. $module->title . '</span></' . $headerTag . '></div>';
+			}
+
+			echo '<div class="module-body">';
+				echo $module->content;
+			echo "</div>";
+
+		echo '</' . $moduleTag . '>';
+	}
+}
+
+function modChrome_no($module, &$params, &$attribs)
+{
+	if ($module->content)
+	{
+		echo $module->content;
+	}
+}
+
+function modChrome_well($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', 'box-title'));
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="well ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<' . $headerTag . ' class="' . $headerClass . '">' . $module->title . '</' . $headerTag . '>';
+			}
+
+			echo $module->content;
+		echo '</' . $moduleTag . '>';
+	}
+}
+
+function modChrome_solid_box_1($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', ''));
+	$icon 			= '';
+	if (preg_match('/^(.+)?(fa fa-[^\s]+)(.+)?$/', $headerClass, $match)) {
+		$headerClass = $match[1];
+		$icon .= $match[2];
+	}
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="module-style solid-box-1 ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<div class="module-title"><' . $headerTag . ' class="box-title ' . $headerClass . '">';
+				if ($icon != '')
+				{
+					echo '<i class="'. $icon .'"></i>';
+				}
+				echo '<span>'. $module->title . '</span></' . $headerTag . '></div>';
+			}
+
+			echo '<div class="module-body">';
+				echo $module->content;
+			echo "</div>";
+
+		echo '</' . $moduleTag . '>';
+	}
+}
+
+function modChrome_solid_box_2($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', ''));
+	$icon 			= '';
+	if (preg_match('/^(.+)?(fa fa-[^\s]+)(.+)?$/', $headerClass, $match)) {
+		$headerClass = $match[1];
+		$icon .= $match[2];
+	}
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="module-style solid-box-2 ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<div class="module-title"><' . $headerTag . ' class="box-title ' . $headerClass . '">';
+				if ($icon != '')
+				{
+					echo '<i class="'. $icon .'"></i>';
+				}
+				echo '<span>'. $module->title . '</span></' . $headerTag . '></div>';
+			}
+
+			echo '<div class="module-body">';
+				echo $module->content;
+			echo "</div>";
+
+		echo '</' . $moduleTag . '>';
+	}
+}
+
+function modChrome_solid_box_3($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', ''));
+	$icon 		   = '';
+	if (preg_match('/^(.+)?(fa fa-[^\s]+)(.+)?$/', $headerClass, $match)) {
+		$headerClass = $match[1];
+		$icon .= $match[2];
+	}
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="module-style solid-box-3 ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<div class="module-title"><' . $headerTag . ' class="box-title ' . $headerClass . '">';
+				if ($icon != '')
+				{
+					echo '<i class="'. $icon .'"></i>';
+				}
+				echo '<span>'. $module->title . '</span></' . $headerTag . '></div>';
+			}
+
+			echo '<div class="module-body">';
+				echo $module->content;
+			echo "</div>";
+
+		echo '</' . $moduleTag . '>';
+	}
+}
+
+function modChrome_plain_box_1($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', ''));
+	$icon 		   = '';
+	if (preg_match('/^(.+)?(fa fa-[^\s]+)(.+)?$/', $headerClass, $match)) {
+		$headerClass = $match[1];
+		$icon .= $match[2];
+	}
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="module-style plain-box-1 ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<div class="module-title"><' . $headerTag . ' class="box-title ' . $headerClass . '">';
+				if ($icon != '')
+				{
+					echo '<i class="'. $icon .'"></i>';
+				}
+				echo '<span>'. $module->title . '</span></' . $headerTag . '></div>';
+			}
+
+			echo '<div class="module-body">';
+				echo $module->content;
+			echo "</div>";
+
+		echo '</' . $moduleTag . '>';
+	}
+}
+
+function modChrome_plain_box_2($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', ''));
+	$icon 		   = '';
+	if (preg_match('/^(.+)?(fa fa-[^\s]+)(.+)?$/', $headerClass, $match)) {
+		$headerClass = $match[1];
+		$icon .= $match[2];
+	}
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="module-style plain-box-2 ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<div class="module-title"><' . $headerTag . ' class="box-title ' . $headerClass . '">';
+				if ($icon != '')
+				{
+					echo '<i class="'. $icon .'"></i>';
+				}
+				echo '<span>'. $module->title . '</span></' . $headerTag . '></div>';
+			}
+
+			echo '<div class="module-body">';
+				echo $module->content;
+			echo "</div>";
+
+		echo '</' . $moduleTag . '>';
+	}
+}
+
+function modChrome_plain_box_3($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
+	$moduleClass   = $bootstrapSize != 0 ? ' span' . $bootstrapSize : '';
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', ''));
+	$icon 		   = '';
+	if (preg_match('/^(.+)?(fa fa-[^\s]+)(.+)?$/', $headerClass, $match)) {
+		$headerClass = $match[1];
+		$icon .= $match[2];
+	}
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="module-style plain-box-3 ' . htmlspecialchars($params->get('moduleclass_sfx')) . $moduleClass . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<div class="module-title"><' . $headerTag . ' class="box-title ' . $headerClass . '">';
+				if ($icon != '')
+				{
+					echo '<i class="'. $icon .'"></i>';
+				}
+				echo '<span>'. $module->title . '</span></' . $headerTag . '></div>';
+			}
+
+			echo '<div class="module-body">';
+				echo $module->content;
+			echo "</div>";
+
+		echo '</' . $moduleTag . '>';
+	}
+}

@@ -1,0 +1,124 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Sboost Framework   
+# ---------------------------------------------------------------
+# Author - mixwebtemplates http://www.mixwebtemplates.com
+# Copyright (C) 2008 - 2017 mixwebtemplates.com. All Rights Reserved.
+# Websites: http://www.mixwebtemplates.com
+-----------------------------------------------------------------*/
+
+body{font-size:13px;}
+.mx-base {width: 960px;} 
+#mx-masid {max-width: calc(960px + 200px)}
+@media only screen and (min-width: 300px) and (max-width: 960px) {#mx-masid {max-width: 960px;}}
+#tophead, #bottsite, #header, #wrapper, #bottomspot {min-width: 960px; margin: 0 auto}
+#mx-leftcol {width: 25%} 
+#mx-rightcol { width: 27%} 
+#mx-sideleft {width: 20%}
+#mx-sideright { width: 30%}
+
+
+h1,h2,h3,h4, .tp-caption
+ {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+}
+body.bg { color: #444; background-color: #fafafa;}
+#wrapper { color: #444; background-color:rgba(255,255,255,0.9);}
+#wrappet { color: #444; background-color:rgba(255,255,255,0.9);}
+#bottsite { color: #fff; background-color: rgba(0,0,0,0.8); padding: 30px 0px; }#bottsite .module, #mainbott .module{
+  padding: 20px; margin: 15px;
+}
+#layerslider {position: relative;z-index: 1;}
+.mx-base .colors h3::before {background-color:#fff !important;}
+#bottomspot  { background-color:rgba(255,255,255,0.8); color: #444;}
+#fobott  { background-color:rgba(255,255,255,0.8); color: #444;}
+.main-title-wrapper h1 { color: #fff; font-family: Arial,Helvetica,sans-serif; font-size: 60px;font-weight:bold; }
+#tophead { background-color:rgba(255,255,255,1); color: #444; position: relative; z-index: 10;}
+.jul-formregistration, .jul-formlogin { color: #222;}
+.service-box .service-content p { color: #ccc !important; }
+#hormenu, a#logo, #logo-text { padding: 5px 0px;}
+.tab .tab-content {margin-top: -5px;}
+.mx_date { padding: 5px 0px;}
+.pi-slide .info { font-size: 18px; line-height: 29px;}
+#menuout .mx-inner,
+#mx-banner .mx-inner, #mx-header .mx-inner, #mx-top .mx-inner {
+	padding:0;
+}
+.mx-base-in {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+   
+#mx-masid{ margin-left:auto;margin-right:auto;}
+#setbottom, #fobott {background-color:rgba(120, 120, 120, 0.1);}     
+#mx-search { height: 46px;}
+#mx-bottom a{ background: transparent;}
+#mx-bottom li a{ padding: 7px 0px; border-bottom: 1px solid #777;}
+#bottomspot .mx-inner {padding:0;}
+#hormenu ul li .submenu-inner,#sublevel ul li .submenu-inner { padding: 3px; margin: 1px 3px 3px 3px; border: 1px solid #ccc;
+	box-shadow:0 0 3px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 0 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.1);}
+.mx_date{float:left;margin-top:8px}
+.form-actions{padding:2px 4px 2px;margin-top:5px;margin-bottom:5px;background: transparent;border-top:1px solid #fff;*zoom:1;}	
+input{width:90%;}
+textarea{width:98%;}
+.quick_contact input{width:80%;}
+#contact-form input{width:40%;}
+#user-registration input, #member-registration input, .login input{width:230px;}
+.pagenav a,.pager a{display:inline-block;padding:4px 14px;background-color:#fff;border:1px solid #ddd;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#fafafa; border-bottom:1px solid #dadada;
+	background-image: -webkit-linear-gradient(top,  #fff, #fafafa);
+	background-image: -moz-linear-gradient(top, #fff, #fafafa);
+	background-image: -ms-linear-gradient(top, #fff, #fafafa);
+	background-image: -o-linear-gradient(top, #fff, #fafafa);}
+.pager a:hover{text-decoration:none;background:#f5f5f5; border-bottom:1px solid #dadada;
+	background-image: -webkit-linear-gradient(top,  #fafafa, #fff);
+	background-image: -moz-linear-gradient(top, #fafafa, #fff);
+	background-image: -ms-linear-gradient(top, #fafafa, #fff);
+	background-image: -o-linear-gradient(top, #fafafa, #fff);}
+a#pagetop{float:right;padding: 4px 10px;}	
+a#valdate{  font-size: 10px;padding: 2px 5px; }	
+	
+.jlogin1 {float:left;width:40%;margin-right:12px;}
+.jlogin2 {float:left;width:50%;margin-top:14px;color:#999;}
+.jlogintext {float:left;margin:0 12px 12px 0;}
+
+.contactForm legend  { font-size: 12px !important;}
+#mx-rightcol .control-group { font-size: 12px !important; }
+
+#mx-rightcol input { width: 95% !important;}
+.btn-primary {
+  background-image: -webkit-linear-gradient(top, #999 0%, #555 100%);
+  background-image: linear-gradient(to bottom, #999 0%, #555 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#999', endColorstr='#555', GradientType=0);
+  border-color: #999;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.gallery  {
+    margin: 0;
+  }
+  @media (max-width: 767px) {
+body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  }  
+
+a{color:#f54a2b}
+a:hover,a:active,a:focus{color:#585858}
+.colors {background-color:#f54a2b;color:#fff;}
+.mx-base h3::before {background-color:#f32328;}
+.readmore, a.readmore {background:#f54a2b;}	
+.social-icons li a .top{ background-color: #f54a2b; color: #fff; }
+.showroom-post-slider-item .showroom-post-image .showroom-post-date, .service-content {background:#f54a2b !important;}
+
+#hormenu ul.level-0 > li.menu-item > a.menu-item::after,
+#sublevel ul.level-1 > li.menu-item > a.menu-item::after{background:#f54a2b;}

@@ -1,0 +1,307 @@
+/* =============== MENU - DIV MENU =============== */
+ul.menu-divmenu {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+ul.menu-divmenu li {
+  margin: 0;
+  padding: 0 0.5em;
+  display: inline-block;
+  a{
+    padding: 0 5px;
+  }
+}
+ul.menu-divmenu li:first-child {
+  padding-left: 0;
+}
+
+/* =============== MENU - DEFAULT =============== */
+ul.nav.menu{
+  li a, li span.nav-header{
+    color: #5e6b76;
+    position: relative;
+    display: block;
+    &:hover{
+      background: transparent;
+      cursor: pointer;
+    }
+    > i.fa{
+      @include rtl-padding-right(5px);
+    }
+    span.description{
+      display: block;
+      font-size: 90%;
+    }
+  }
+}
+ul.nav.menu li span.nav-header{
+    transition: all 0.3 ease-in-out;  
+}
+.nav > li > a,.nav > li > span.nav-header {
+  padding: 8px 0;
+}
+.nav  li > span.nav-header{
+  display: block;
+}
+ul.nav.hidden-icon li a i.fa{
+  display: none !important;
+}
+ul.nav.hidden-description li a span.description{
+  display: none !important;
+}
+
+/* =============== MENU - TREE MENU =============== */
+ul.nav[class*='menu-treemenu'] {
+   li {
+      padding-top: 0;
+      padding-bottom: 0;
+		a, span.nav-header {
+         display: block;
+         padding-top: 6px;
+         padding-bottom: 6px;
+         @include rtl-padding-left(12px !important); 
+         &:hover{
+            text-decoration: none;
+            background: transparent;
+		}
+      }
+	   &:first-child {
+		 margin-top: 0;
+	   }
+      ul.nav-child{ 
+         list-style-type: none;     
+         @include rtl-padding-left(15px);
+      }
+      > span.separator{
+         padding: 12px 20px;
+         display: block;
+      }     
+   } 
+   > li > a, > li > span.nav-header{
+      
+	  @include rtl-padding-left(12px !important); 
+      position: relative;
+      &:before{
+         position: absolute;
+         @include rtl-left(0);
+         top: 50%;
+         content: '\f0c8';
+         font-family: FontAwesome;
+         font-size: 5px;
+         transform: translateY(-50%);
+      }
+   }
+   > li > ul > li{
+		> a, > span.nav-header {
+			position: relative;
+			@include rtl-padding-left(12px !important); 			
+			&:before {
+            position: absolute;
+            @include rtl-left(0);
+            top: 50%;
+            content: '\f111';
+            font-family: FontAwesome;
+            font-size: 5px;
+            transform: translateY(-50%);
+        }        
+      }
+      > ul > li > a{
+         position: relative;        
+         &:before{
+            position: absolute;
+            @include rtl-left(0);
+            top: 50%;
+            content: '-'; 
+            transform: translateY(-50%);
+         } 
+      }
+   }
+}
+
+/* =============== MENU - SIDE MENU =============== */
+.module-style ul.nav[class*='menu-sidemenu'],.module-style ul.nav[class*='menu-treemenu'] {
+   margin: -8px 0;
+   > li > a, > li > span.nav-header {
+      position: relative;
+   }
+}
+
+ul.nav[class*='menu-sidemenu'] {
+   > li > a {
+      &:hover,&:focus{
+         background: transparent;
+      }
+   }  
+   li {
+     position: relative;
+	  padding: 0;
+    a, span.nav-header {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      padding: 5px 0;
+	  &.get-it {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-weight: normal;
+		margin-top: 45px;
+		&:not(.btn-outline) {
+			color: #fff;
+			&:hover {
+				color: #fff;
+			}
+		}
+		&:before {
+			content:"";
+			display: block;
+			background-color: #E7EAEE;
+			height: 1px;
+			width: 100%;
+			position: absolute;
+			top: -30px;
+		}
+	  }
+    }  
+    &:hover > ul {
+      visibility: visible;
+      display: block;
+      opacity: 1;
+      transition-delay: 0.2s;
+    }
+    @media (min-width: $screen-sm-min) {
+      ul {
+        position: absolute;
+        top: 0;  
+        padding: 12px 20px;
+        left: 100%;;
+        right: auto;
+        min-width: 200px;
+        list-style-type: none !important;
+        border: none;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: 900;
+        margin: 0 0 0 20px;
+		box-shadow: 0 2px 2px 0 #dbe1e7;
+      }
+      &.parent > a{
+        position: relative;
+        &:after{
+          content: '\f0da';
+          font-family: FontAwesome;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);        
+        }
+      }
+  }
+  
+  @media (min-width: $screen-sm-max) {
+      ul {
+        position: absolute;
+        top: 0;  
+        padding: 12px 20px;
+        left: 100%;;
+        right: auto;
+        min-width: 200px;
+        list-style-type: none !important;
+        border-top: 1px solid #f9f9f9;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: 900;
+        margin: 0 0 0 15px;
+		box-shadow: 0 2px 2px 0 #dbe1e7;
+      }
+      &.parent > a, &.parent > span {
+        position: relative;
+		.caret {
+			border: none;
+			position: absolute;
+		}
+        &:after {
+          content: "\f0da";
+          font-family: FontAwesome;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);        
+        }
+      }
+  }
+  
+    @media (max-width: $screen-sm-max) {
+    ul{
+      display: none;
+      padding-right: 10px;
+    }
+	
+	&.parent ul {
+		 display: none;
+		 box-shadow: none;
+	}
+	ul {
+		box-shadow: none;
+	}
+	&.active > ul {
+		display: block;
+	}
+	&.parent {
+		> span,
+		> a {
+			position: relative;
+			span.caret {
+				border: none;
+				float: right;
+			}
+			.caret:after{
+				content: "\f0da";
+				font-family: FontAwesome;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);  
+			}
+		}
+		&.active {
+			> span,
+			> a {
+				.caret:after{
+					content: "\f0d7";
+				}
+			}
+		}
+    }
+	
+  }
+  }
+}
+
+.module-style.layout-right,.sunfw-pos-right .module-style {
+  ul.nav[class*='menu-sidemenu'] li ul {
+    @include rtl-right(auto);
+    @include rtl-left(-200px);
+  }
+}
+//RTL Side Menu
+@media (min-width: $screen-sm-min) {
+  .sunfw-direction-rtl ul.nav[class*='menu-sidemenu'] li{
+    ul{
+      right: calc(100% + 1px);
+      left: auto;
+    }
+    &.parent > a:after{
+      content: '\f0d9';
+      top: 50%;
+      left: 10px;
+      right: auto;
+      transform: translateY(-50%);        
+    }
+  }
+}

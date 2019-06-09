@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site" method="upgrade">
+    <name>ol_corporate</name>
+    <creationDate>2019</creationDate>
+    <author>olwebdesign.com</author>
+    <authorEmail>support@olwebdesign.com</authorEmail>
+    <authorUrl>http://www.olwebdesign.com</authorUrl>
+    <copyright>Copyright (C) 2010 - 2019 olwebdesign.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only</license>
+    <version>3.5.1</version>
+    <description><![CDATA[<link href="../templates/ol_corporate/slider/admin.css" rel="stylesheet" type="text/css" media="all" />								
+			<div id="wrap1">     
+			<h1><em>ol_corporate free</em></h1>
+			<div class="wrap2">                  						
+			<a title="Visit the official website!" href="http://www.olwebdesign.com/" target="_blank"> <img style="float:left;border:1px solid #ccc;margin-right:10px;padding:3px" src="../templates/ol_corporate/template_thumbnail.png" border="0" alt="Logo" /></a>   
+			<div class="leftside">
+			<h4>Free Joomla Template.</h4> 
+			<p>Some features are not available in free version. <br/>
+			Pro template which has all features, the extension, Quickstart package and template help are included on the full package. For additional information visit <a href="http://www.olwebdesign.com/professional-joomla-templates-showcase/item/120-ol-doodi-responsive-joomla-template">olwebdesign</a></p>
+			</div></div></div>]]>
+</description>
+    <updateservers>
+        <server type="extension" priority="1" name="ol_corporate">https://www.olwebdesign.com/updates/ol_corporate.xml</server>
+    </updateservers>
+<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ol_corporate.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_ol_corporate.ini</language>
+		<language tag="it-IT">it-IT/it-IT.tpl_ol_corporate.ini</language>
+</languages>
+    <positions>
+        <position>cpanel1</position>
+        <position>cpanel2</position>
+        <position>cpanel3</position>
+		<position>features</position>
+		<position>pricing</position>
+		<position>top-menu</position>
+		<position>extra1</position>
+		<position>extra2</position>
+        <position>header</position>
+        <position>header1</position>
+        <position>top1</position>
+        <position>top2</position>
+        <position>top3</position>
+        <position>top4</position>
+        <position>top5</position>
+        <position>top6</position>
+        <position>left</position>
+        <position>left1</position>
+        <position>left2</position>
+        <position>left-mid</position>
+        <position>left3</position>
+        <position>left4</position>
+        <position>left-bottom</position>
+        <position>right</position>
+        <position>right1</position>
+        <position>right2</position>
+        <position>right-mid</position>
+        <position>right3</position>
+        <position>right4</position>
+        <position>right-bottom</position>
+        <position>top</position>
+        <position>map</position>
+        <position>bottom</position>
+        <position>maintop1</position>
+        <position>maintop2</position>
+        <position>maintop3</position>
+        <position>maintop4</position>
+        <position>mainbottom1</position>
+        <position>mainbottom2</position>
+        <position>mainbottom3</position>
+        <position>mainbottom4</position>
+        <position>sideleft</position>
+        <position>sideright</position>
+        <position>advert</position>
+        <position>advert1</position>
+        <position>advert2</position>
+        <position>advert3</position>
+        <position>advert4</position>
+        <position>advert-mid</position>
+        <position>advert5</position>
+        <position>advert6</position>
+        <position>advert7</position>
+        <position>advert8</position>
+        <position>advert-bottom</position>
+        <position>pathway</position>
+        <position>info-top</position>
+        <position>info1</position>
+        <position>info2</position>
+        <position>info3</position>
+        <position>info4</position>
+        <position>info-bottom</position>
+        <position>bottom1</position>
+        <position>bottom2</position>
+        <position>bottom3</position>
+        <position>bottom4</position>
+        <position>bottom5</position>
+        <position>bottom6</position>
+        <position>breadcrumbs</position>
+        <position>footer-nav</position>
+        <position>section</position>
+        <position>debug</position>
+        <position>mainmenu</position>
+    </positions>
+    <files>
+        <file>index.php</file>
+        <file>index.html</file>
+        <file>component.php</file>
+        <file>error.php</file>
+        <file>offline.php</file>
+        <file>template_preview.png</file>
+        <file>template_thumbnail.png</file>
+        <file>templateDetails.xml</file>
+        <folder>css/</folder>
+        <folder>html/</folder>
+        <folder>images/</folder>
+        <folder>slider/</folder>
+        <folder>js/</folder>
+        <folder>language/</folder>
+        <folder>lib/</folder>
+    </files>
+    <config>
+        <fields name="params">	           	
+            <!--Start Logo Tab-->
+			<fieldset name="logo" description="" label="COM_TEMPLATES_LOGO" addfieldpath="/templates/ol_corporate/lib/framework/elements">
+				<field name="logo_type" type="radio" class="btn-group" default="image" label="LOGO_TYPE" description="LOGO_TYPE_TEXT" >
+                    <option value="image">Image</option>
+                    <option value="text">Text</option>
+                </field>
+                <field name="showMediaLogo" type="radio" class="btn-group" default="imglogo" label="SHOW_MEDIA_LOGO_LABEL" description="SHOW_MEDIA_LOGO_DESC">
+						<option value="imglogo">Default Logo</option>
+						<option value="imgload">Upload Logo</option>
+					</field>
+                <field name="mediaLogo" type="media" label="MEDIA_LOGO_LABEL" description="MEDIA_LOGO_DESC" />
+                <field name="logo_text" type="text" default="SITE NAME" label="LOGO_TEXT" description="LOGO_TEXT_DESC" />
+                <field name="logo_slogan" type="text" default="" label="LOGO_SLOGAN" description="LOGO_SLOGAN_DESC" />
+            </fieldset>	
+            <!--End logo Tab-->	
+            <fieldset name="sliderspot" label="Slider">
+                <field name="hide_slider" type="radio" class="btn-group" default="0" label="HIDE_SLIDER" description="HIDE_SLIDER_DESC">
+                    <option value="1">Show</option>
+                    <option value="0">Hide</option>
+                </field>
+                <field name="show_slider_items" type="menuitem" multiple="multiple" size="20" default="0" label="HIDE_SLIDER_ITEMS" description="HIDE_SLIDER_ITEMS_DESC" />	
+				<field name="slider_items" type="subform" formsource="templates/ol_corporate/slider/image.xml" class="advancedSelect" min="1" max="50" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" label="Slider" description="Add slider items" />
+				<field type="line" text="Slider settigns"/>	
+                <field name="sl_grey" type="radio" class="btn-group" default="0" label="Grayscale effect (pro)" description="Use grayscale effect" disabled="true">
+                    <option value="1">Show</option>
+                    <option value="0">Hide</option>
+                </field> 
+				<field name="styleh" type="text" default="450" label="Header Heigh" description="Write here header Heigh example 500" />
+				<field name="stylew" type="text" default="1000" label="Header width" description="Write here header width example 1000" />														
+				<field name="eskin" type="list" default="borderlesslight" label="Skin type" description="Select a skin.">
+					<option value="borderlessdark">borderless dark</option>
+					<option value="borderlessdark3d">borderless dark3d</option>
+					<option value="borderlesslight">borderless light</option>
+					<option value="borderlesslight3d">borderless light3d</option>
+					<option value="carousel">carousel</option>
+					<option value="darkskin">dark</option>
+					<option value="defaultskin">default</option>
+					<option value="glass">glass</option>
+					<option value="lightskin">light</option>
+					<option value="noskin">noskin</option>
+					<option value="fullwidth">full width</option>
+					<option value="fullwidthdark">fullwidth dark</option>
+					<option value="photogallery">photo gallery</option>
+					<option value="minimal">minimal</option>
+					<option value="numbers">numbers</option>
+					<option value="roundedflat">roundedflat</option>
+					<option value="outline">outline</option>
+					<option value="v5">Advance</option>
+					<option value="v6">Extra</option>
+				</field>
+				<field name="pojo" type="list" default="true" label="Pause On Hover" description="Pause On Hover">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				<field name="jqueryload" type="list" default="0" label="Load jquey script" description="Load jquey script only if it does not work">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>	
+			
+			</fieldset>   
+			
+			<!-- social settings -->
+			<fieldset name="icons" description="" label="Social icons">	
+                    <field name="social_api_type" type="radio" class="btn-group" default="1" label="SOCIAL" description="SOCIAL_API_TYPE_DESC">
+                         <option value="1">Yes</option>
+                         <option value="0">No</option>
+                    </field>						
+                    <field name="popup_fb" type="radio" class="btn-group" default="1" label="Facebook">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+                    <field name="popup_twitter" type="radio" class="btn-group" default="1" label="Twitter">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+                    <field name="popup_gplus" type="radio" class="btn-group" default="1" label="Google plus">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+                    <field name="popup_pinterest" type="radio" class="btn-group" default="1" label="Pinterest">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+                    <field name="popup_linkedin" type="radio" class="btn-group" default="0" label="Linkedin">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+                    <field name="popup_digg" type="radio" class="btn-group" default="0" label="Digg">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+                    <field name="popup_vk" type="radio" class="btn-group" default="0" label="Vk">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+                    <field name="popup_stumbleupon" type="radio" class="btn-group" default="0" label="Stumbleupon">
+                         <option value="1">ENABLED</option>
+                         <option value="0">DISABLED</option>
+                    </field>
+			</fieldset>	
+			<!--End social settings -->    
+			             
+            <fieldset name="layout" label="Layout">
+                <!--Start Basic Tab-->		
+                <field type="spacer" label="ONLY_IN_PRO" />	
+                <field name="layout_type" type="list" default="1" label="LAYOUT_TYPE" description="LAYOUT_TYPE_DESC">
+                    <option value="1">Left + Content + Right</option>
+                    <option value="2" disabled="true">Left + Right + Content</option>
+                    <option value="3" disabled="true">Content + Left + Right</option>
+                </field>
+                <field name="show_sticky" type="radio" class="btn-group" default="1" label="Float right Column" description="Float right Column" disabled="true">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="main_width" type="text" default="960px" label="MAIN_WIDTH" description="MAIN_WIDTH_DESC" disabled="true" />
+                <field name="left_width" type="text" default="25" label="LEFT_WIDTH" description="LEFT_WIDTH_DESC" disabled="true" />
+                <field name="right_width" type="text" default="27" label="RIGHT_WIDTH" description="RIGHT_WIDTH_DESC" disabled="true" />
+                <field name="sideleft_width" type="text" default="20" label="INSET1_WIDTH" description="INSET1_WIDTH_DESC" disabled="true" />
+                <field name="sideright_width" type="text" default="30" label="INSET2_WIDTH" description="INSET2_WIDTH_DESC" disabled="true" />
+                <field name="width_unit" type="radio" class="btn-group" default="percent" label="WIDTH_UNIT" description="WIDTH_UNIT_DESC">
+                    <option value="percent">PERCENT</option>
+                    <option value="pixel" disabled="true">PIXEL</option>
+                </field>
+                <field name="fixed_column_height" type="radio" class="btn-group" default="0" label="FIXED_COLUMN_HEIGHT" description="FIXED_COLUMN_HEIGHT_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1" disabled="true">JYES</option>
+                </field>
+            </fieldset>
+            <!--End Basic Tab-->
+
+            <!--Start Menu Tab-->
+            <fieldset name="MENU">
+                <field name="float" type="radio" class="btn-group" default="1" label="Float Menu" description="Select yes for Float Menu">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field type="spacer" label="ONLY_IN_PRO" />
+                <field type="spacer" label="This menu is available only in pro. On free version the menu can not be controlled here. Go in extension - module manager and for the menu you want to be as horizontal, select position mainmenu." />                
+				<field name="show_menu" type="radio" class="btn-group" default="1" label="Show Horizontal menu" description="Show Horizontal menu">
+                    <option value="0" disabled="true">No</option>
+                    <option value="1" disabled="true">Yes</option>
+				</field>
+                <field name="menutype" type="menu" default="mainmenu" label="SELECT_MENU" description="SELECT_MENU_DESC"  disabled="true"/>
+                <field name="mxmenu" type="list" default="moo" label="MENU_TYPE" description="MENU_TYPE_DESC">
+                    <option value="moo" disabled="true">Moo Menu</option>
+                    <option value="mega" disabled="true">Mega Menu</option>
+                </field>
+                <field name="menu_col_width" type="text" default="200" label="DROP_COL_WIDTH" description="DROP_COL_WIDTH_DESC" disabled="true" />
+                <field name="show_menu_image" type="radio" class="btn-group" default="1" label="SHOW_MENU_IMAGE" description="SHOW_MENU_IMAGE_DESC" disabled="true">
+                    <option value="0" disabled="true">No</option>
+                    <option value="1" disabled="true">Yes</option>
+                </field>
+                <field name="menu_animation" type="list" default="none" label="ANIMATION_TYPE" description="ANIMATION_TYPE_DESC">
+                    <option value="none" disabled="true">No Animation</option>
+                    <option value="fade" disabled="true">Fade</option>
+                    <option value="slide" disabled="true">Slide</option>
+                    <option value="slidefade" disabled="true">Slide and Fade</option>
+                </field>
+                <field name="menu_duration" type="text" default="300" label="DURATION" description="DURATION_DESC" disabled="true" />
+                <field name="menu_transition" type="list" default="linear" label="TRANSITION" description="TRANSITION_DESC" disabled="true" >
+                    <option value="linear">linear</option>
+                    <option value="Quad.easeOut">Quad.easeOut</option>
+                    <option value="Quad.easeIn">Quad.easeIn</option>
+                    <option value="Quad.easeInOut">Quad.easeInOut</option>
+                    <option value="Cubic.easeOut">Cubic.easeOut</option>
+                    <option value="Cubic.easeIn">Cubic.easeIn</option>
+                    <option value="Cubic.easeInOut">Cubic.easeInOut</option>
+                    <option value="Quart.easeOut">Quart.easeOut</option>
+                    <option value="Quart.easeIn">Quart.easeIn</option>
+                    <option value="Quart.easeInOut">Quart.easeInOut</option>
+                    <option value="Quint.easeOut">Quint.easeOut</option>
+                    <option value="Quint.easeIn">Quint.easeIn</option>
+                    <option value="Quint.easeInOut">Quint.easeInOut</option>
+                    <option value="Expo.easeOut">Expo.easeOut</option>
+                    <option value="Expo.easeIn">Expo.easeIn</option>
+                    <option value="Expo.easeInOut">Expo.easeInOut</option>
+                    <option value="Circ.easeOut">Circ.easeOut</option>
+                    <option value="Circ.easeIn">Circ.easeIn</option>
+                    <option value="Circ.easeInOut">Circ.easeInOut</option>
+                    <option value="Sine.easeOut">Sine.easeOut</option>
+                    <option value="Sine.easeIn">Sine.easeIn</option>
+                    <option value="Sine.easeInOut">Sine.easeInOut</option>
+                    <option value="Back.easeOut">Back.easeOut</option>
+                    <option value="Back.easeIn">Back.easeIn</option>
+                    <option value="Back.easeInOut">Back.easeInOut</option>
+                    <option value="Bounce.easeOut">Bounce.easeOut</option>
+                    <option value="Bounce.easeIn">Bounce.easeIn</option>
+                    <option value="Bounce.easeInOut">Bounce.easeInOut</option>
+                    <option value="Elastic.easeOut">Elastic.easeOut</option>
+                    <option value="Elastic.easeIn">Elastic.easeIn</option>
+                    <option value="Elastic.easeInOut">Elastic.easeInOut</option>
+                </field>
+                <field name="init_x" type="text" default="0" label="X_OFFSET1" description="X_OFFSET1_DESC" disabled="true" />
+                <field name="init_y" type="text" default="0" label="Y_OFFSET1" description="Y_OFFSET1_DESC" disabled="true" />
+                <field name="sub_x" type="text" default="0" label="X_OFFSET2" description="X_OFFSET2_DESC" disabled="true" />
+                <field name="sub_y" type="text" default="0" label="Y_OFFSET2" description="Y_OFFSET2_DESC" disabled="true" />
+            </fieldset>
+            <!--End Menu Tab-->
+        	
+            <!--Start Preset Tab-->            
+			<fieldset name="preset" description="" label="COM_TEMPLATES_COLORS">
+                <field type="spacer" label="ONLY_IN_PRO" />	
+                <field name="tempcolor" type="radio" class="btn-group" default="0" label="SHOW_TEMPLATE_COLOR" description="SHOW_TEMPLATE_COLOR_DESC">
+                    <option value="0">No</option>
+                    <option value="1" disabled="true">Yes</option>
+                </field>
+                <field name="style" type="list" default="lilac" label="PRESET" description="PRESET_DESC">
+                    <option value="blue" disabled="true">Blue</option>
+                    <option value="green" disabled="true">Green</option>
+                    <option value="brown" disabled="true">Brown</option>
+					<option value="orange" disabled="true">Orange</option>
+					<option value="lilac">Lilac</option>
+					<option value="red" disabled="true">Red</option>
+                </field>
+                
+                <field type="line" text="Menu" />
+				<field name="MeColor" type="color" default="" label="Menu Link color" description="Menu Link color"></field>
+				<field name="MeBgr" type="color" default="" class="btn-group" label="Menu background color" description="Menu background color"></field>
+				<field name="MeColormove" type="color" default="" label="Menu scroll Link color" description="Menu scroll Link color"></field>
+				<field name="MeBgrmove" type="color" default="" class="btn-group" label="Menu scroll background" description="Menu scroll background color"></field>
+				
+                <field type="line" text="Outside" />
+				<field name="BgColor" type="color" default="" label="BG_COLOR_LABEL" description="BG_COLOR_DESC"></field>
+				<field name="BgText" type="color" default="" label="BG_TEXT_LABEL" description="BG_TEXT_DESC"></field>
+				<field name="BgImage" type="media" default="" label="Background image" description="Chose a Background image"/>
+				<field name="BgPattern" type="list" default="" label="BG_PATTERN_LABEL" description="BG_PATTERN_DESC">
+					<option value="">Default</option>
+					<option value="no" disabled="true">No Pattern</option>
+					<option value="dots">Dots</option>
+					<option value="lines" disabled="true">Lines</option>
+					<option value="leather" disabled="true">Leather</option>
+					<option value="sand" disabled="true">Sand</option>
+					<option value="squares" disabled="true">Squares</option>
+					<option value="rounds" disabled="true">Rounds</option>
+					<option value="wave" disabled="true">Waves</option>
+				</field>
+				
+                <field type="line" text="Header" />
+				<field name="HdText" type="color" default="" label="HD_TEXT_LABEL" description="HD_TEXT_DESC"></field>
+				<field name="HdColor" type="color" default="" label="HD_COLOR_LABEL" description="HD_COLOR_DESC"></field>
+
+                <field type="line" text="Map" />
+				<field name="BgImagebh" type="media" default="" label="Background image" description="Chose a Background image"/>
+								
+                <field type="line" text="Footer" />
+				<field name="BtText" type="color" default="" label="BT_TEXT_LABEL" description="BT_TEXT_LABEL"></field>
+				<field name="BtColor" type="color" default="" label="BT_COLOR_LABEL" description="BT_COLOR_DESC"></field>
+				
+                <field type="line" text="Main" />				
+				<field name="MbColor" type="color" default="" label="MB_COLOR_LABEL" description="MB_COLOR_DESC"></field>
+				<field name="MbText" type="color" default="" label="MB_TEXT_LABEL" description="MB_TEXT_DESC"></field>
+				<field name="MbPattern" type="list" default="" label="MB_PATTERN_LABEL" description="MB_PATTERN_DESC">
+					<option value="">Default</option>
+					<option value="no" disabled="true">No Pattern</option>
+					<option value="dots">Dots</option>
+					<option value="lines" disabled="true">Lines</option>
+					<option value="leather" disabled="true">Leather</option>
+					<option value="sand" disabled="true">Sand</option>
+					<option value="squares" disabled="true">Squares</option>
+					<option value="rounds" disabled="true">Rounds</option>
+					<option value="wave" disabled="true">Waves</option>
+				</field>
+            </fieldset>
+            <!--End Preset Tab-->
+            			
+            <!--Start Font Tab-->
+            <fieldset name="FONTS">
+                <field type="spacer" label="ONLY_IN_PRO" />	
+                <field name="main_font" type="text" default="13px" label="BODY_FONT_SIZE" description="BODY_FONT_SIZE_DESC" disabled="true" />
+                <field name="font_h1" type="text" default="44px" label="H1 font size" description="H1 font size" disabled="true" />
+                <field name="font_h2" type="text" default="33px" label="H2 font size" description="H2 font size" disabled="true" />
+                <field name="font_h3" type="text" default="24px" label="H3 font size" description="H3 font size" disabled="true" />
+    
+            </fieldset>
+            <!--End Font Tab-->
+            			
+            <!--Start Font Tab-->
+            <fieldset name="RESPONSIVE"  label="Responsive">
+                <field type="spacer" label="ONLY_IN_PRO" />	
+                <field name="go_respo" type="radio" class="btn-group" default="0" label="Responsive" description="Responsive Template">
+                    <option value="0">No</option>
+                    <option value="1" disabled="true">Yes</option>
+                </field>
+            </fieldset>
+            <!--End Font Tab-->
+					
+            <!--Start Advanced Tab-->
+            <fieldset name="ADVANCED">
+                <field type="line" text="Cache Setting" />
+                <field name="cache_time" type="text" default="60" label="CACHE_TIME" description="CACHE_TIME_DESC" />
+                <field type="line" text="Direction" />
+                <field name="direction" type="radio" class="btn-group" default="ltr" label="DIRECTION" description="DIRECTION_DESC">
+                    <option value="ltr">LTR</option>
+                    <option value="rtl">RTL</option>
+                </field>
+                <field type="line" text="COMPRESS" />
+                <field name="compress_css" type="radio" class="btn-group" default="0" label="CSS Compression ( PRO )" description="CSS_COMPRESS_DESC">
+                    <option value="0">No</option>
+                    <option value="1" disabled="true">Yes</option>
+                </field>
+                <field name="compress_js" type="radio" class="btn-group" default="0" label="Javascript Compress ( PRO )" description="JS_COMPRESS_DESC">
+                    <option value="0">No</option>
+                    <option value="1" disabled="true">Yes</option>
+                </field>
+                <field type="line" text="LINE_GA" />
+                <field name="enable_ga" type="radio" class="btn-group" default="0" label="ENABLE_GA" description="ENABLE_GA_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="ga_code" type="text" default="" label="GA_CODE" description="GA_CODE_DESC" />
+                <field type="line" text="LINE_JU" />
+                <field name="showcp" type="radio" class="btn-group" default="1" label="SHOW_JU" description="SHOW_JU_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="copyright" type="textarea" rows="6" cols="30" default="2018 olwebdesign. All Rights Reserved." label="COPYRIGHT" description="COPYRIGHT_DESC" />
+                <field name="designed_by" type="radio" class="btn-group" default="1" label="Show designed by ( PRO )" description="DESIGNED_BY_DESC">
+                    <option value="0" disabled="true">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field type="line" text="Top panel" />
+                <field name="copanel" type="text" default="Top Panel" label="Top panel name ( PRO )" description="Top panel name"  disabled="true"/>
+                <field type="line" text="LINE_OTHERS" />
+                <field name="showtop" type="radio" class="btn-group" default="0" label="Show Goto top" description="SHOW_GOTO_TOP_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="show_awesome" type="radio" class="btn-group" default="1" label="LOAD_AWESOME" description="LOAD_AWESOME_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="ie6warn" type="radio" class="btn-group" default="1" label="IE6WARN" description="IE6WARN_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="jquery" type="radio" class="btn-group" default="0" label="JQUERY" description="JQUERY_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="bootstrap" type="radio" class="btn-group" default="1" label="BOOTSTRAP" description="BOOTSTRAP_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>				
+                <field type="line" text="LINE_HIDE_COMPONENT" />
+                <field name="hide_component" type="radio" class="btn-group" default="0" label="HIDE_COMPONENT" description="HIDE_COMPONENT_DESC">
+                    <option value="0">Show</option>
+                    <option value="1">Hide</option>
+                </field>
+                <field name="hide_menu_items" type="menuitem" multiple="multiple" size="20" default="0" label="HIDE_MENU_ITEMS" description="HIDE_MENU_ITEMS_DESC" />
+                <!--End Advanced Tab-->
+            </fieldset>
+        </fields>
+    </config>
+</extension>

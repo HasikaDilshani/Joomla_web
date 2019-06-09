@@ -1,0 +1,309 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Sboost Framework   
+# ---------------------------------------------------------------
+# Author - mixwebtemplates http://www.mixwebtemplates.com
+# Copyright (C) 2008 - 2017 mixwebtemplates.com. All Rights Reserved.
+# Websites: http://www.mixwebtemplates.com
+-----------------------------------------------------------------*/
+
+/* Layout */
+.item{float:left;position:relative}
+.cols-1 .item{width:100%}
+.cols-2 .item{width:50%}
+.cols-3 .item{width:33.33%}
+.cols-4 .item{width:25%}
+.cols-5 .item{width:20%}
+
+.item-inner { padding: 10px;}
+.item .first {margin-left:-10px}
+.item .last {margin-right:-10px}
+.item .single {margin-left:-10px;margin-right:-10px}
+span.item-separator,.item-separator{clear:both;display:block;min-height:1px}
+
+/* Headings */
+h2{font-family:Georgia,"Times New Roman",Times,serif}
+
+/* image */
+.img_caption{padding-right:0}
+.img_caption p{color:#999;text-align:center}
+.img_caption.left,.img_caption.right{}
+
+/* Table */
+.filter{margin:10px 0}
+.display-limit,.filter{margin-right:7px;text-align:right}
+span.number{color:#969696;font-style:italic}
+table.contenttoc{float:right;margin:5px 10px;padding:5px}
+table.contenttoc td{padding:0 5px}
+#adminForm table thead tr,#adminForm table thead tr th{background:#222;color:#fff;text-align:left;border-bottom:1px solid #b4b4b4;font-weight:700;padding:5px 10px}
+#adminForm table thead tr th a{color:#FFF}
+.cat-list-row0 td,.cat-list-row1 td{border-bottom:1px dotted #DADADA;border-left:1px dotted #DADADA;padding:6px 10px}
+.cat-list-row1 td{background:#FBFBFB}
+.cat-list-row0:hover,.cat-list-row1:hover{background:none repeat scroll 0 0 #FFFDF1}
+.cat-list-row0 td:first-child,.cat-list-row1 td:first-child{border-left:medium none}
+table.category th a img{padding:2px 10px}
+.filter-search{float:left}
+.filter-search .inputbox{width:6em}
+
+table.weblinks,table.category{font-size:1em;width:99%;margin:10px 10px 20px 0}
+table.weblinks td,table.category td{padding:7px}
+table.weblinks th,table.category th{text-align:left;padding:7px}
+td.num{text-align:left;vertical-align:top}
+td.hits{text-align:center;vertical-align:top}
+td p{line-height:1.3em;margin:0}
+table,table.weblinks td{border-collapse:collapse}
+
+/* Article Info */
+.article-tools{color:#999;padding:0;margin:0;clear:both;display:block;position:relative}
+.blog .article-tools {margin-bottom:0!important}
+.article-tools dl.article-info{float:left;width:70%;margin:0;padding:0}
+.rtl .article-tools dl.article-info{float:right!important}
+.article-tools dl.article-info dd{display:inline-block;margin:0 10px 0 0;text-transform:capitalize;padding:0}
+ul.buttonheading{float:right;margin:0;padding:0}
+ul.buttonheading li{background:none;display:inline;line-height:1;margin:0;padding:0}
+ul.buttonheading li img{border:0 none;margin:0 5px 0 0}
+
+/* Pagination */
+div.pagination{clear:both;min-height:1px;padding:20px 0}
+div.pagination p.counter {float:right;margin:10px 0 0}
+
+/*Page Navigation*/
+ul.pagenav {}
+ul.pagenav li {background:none;padding:0;margin:0}
+ul.pagenav li.pagenav-prev {float:left}
+ul.pagenav li.pagenav-next {float:right}
+
+/* items more */
+div.items-more { border-top: 1px dotted #dddad8; padding: 15px 0; margin:30px 0; }
+div.items-more ul { padding: 0; margin:0}
+div.categories-list ul li {margin-bottom:5px}
+div.categories-list dt {float: left}
+div.categories-list dd {text-indent: 4px}
+
+div.categories-list ul li{background:none;padding-left:0}
+div.categories-list dl.article-count dt,div.categories-list dl.article-count dd{display:inline}
+div.categories-list dl.article-count dd{margin-left:0}
+div.categories-list ul li ul{margin-left:10px}
+div.categories-list ul li li{background:#fafafa;border-bottom:1px solid #CCC;padding:10px}
+div.categories-list ul li li li{background:#f3f3f3}
+div.categories-list ul li li.last{border-bottom:0 none}
+
+/* Contact */
+.contact { padding:0 5px }
+.contact-category { padding:0 10px }
+.contact-category #adminForm fieldset.filters { border:0; padding:0 }
+.contact-image { margin:10px 0; overflow:hidden; float: right; }
+address { font-style:normal; margin:10px 0; }
+address span { display:block }
+span.contact-image { margin-bottom:10px; overflow:hidden; display:block }
+.contact-address { margin:20px 0 10px 0; }
+.contact-email div { padding:2px 0; margin:0 0 10px 0; }
+.contact-email label { width:17em; float:left; }
+#contact_textmsg { padding: 2px 0 10px 0 }
+#contact-email-copy { float:left; margin-right:10px; }
+.contact .button { float:none !important; clear:left; display:block; margin:20px 0 0 0 }
+.panel{ border:solid 1px #ddd;margin-top:-1px}
+.contact .panel h3
+{
+	margin: 0;
+	padding: 0;
+	background:#fafafa;
+	border:0
+}
+.panel h3 a
+{
+	display:block;
+	padding:5px 12px;
+	text-decoration:none;
+}
+
+
+.panel h3.pane-toggler a
+{
+	background:#f5f5f5 url(../images/slider_plus.png) right 2px no-repeat;
+}
+.panel h3.pane-toggler-down a
+{
+	background:#f5f5f5  url(../images/slider_minus.png) right 2px no-repeat;
+	border-bottom:solid 1px #ddd;
+}
+
+.pane-slider
+{
+	border:solid 0px;
+	padding:0px 10px !important;
+	margin:0;
+}
+
+.panel .contact-form,
+.panel  .contact-miscinfo
+{
+	padding:10px
+}
+
+.contact .panel .contact-form form,
+.contact .panel .contact-address
+{
+	margin:20px 0 0 0
+}
+
+
+/*Statistics*/
+dl.stats-module dd{float:left;margin:0 0 10px}
+dl.stats-module dt{clear:both;float:left;margin:0 0 10px;min-width:140px}
+
+/*Search*/
+form#searchForm{padding:15px 0}
+.results h4{margin:15px 0 0}
+.result-text span.highlight {background:#ffffcc; color: #900;}
+.search fieldset{border:1px solid #ddd;margin:25px 0 15px;padding:10px}
+.search fieldset legend{font-size:100%}
+.search .word button{margin-left:5px}
+.search .word .inputbox{vertical-align:top}
+.search .word label{vertical-align:bottom}
+.results p,.search .phrases-box{margin:0 0 10px}
+.search-results dt.result-title{border-top:1px dotted #DADADA;padding-top:20px;margin:20px 0}
+
+/*Login*/
+#login-form .controls a.btn {padding:6px 5px 6px}
+.userdata #modlgn-username,.userdata #modlgn-passwd{width:92%;}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) and (max-width: 959px) { 
+	#modlgn-username,#modlgn-passwd {width:50px}
+}
+
+/*Edit*/
+div.edit {}
+.edit label{display:block;float:left;font-weight:700;text-align:right;width:130px}
+label#jform_description-lbl {width:auto!important;float:none!important;text-align:left}
+.edit fieldset{padding:20px 0 0}
+.edit .inputbox,.edit input{margin-left:10px;width:150px}
+.edit select{margin-left:10px;width:164px!important}
+.edit div.formelm {margin-bottom:10px}
+.edit div.formelm-buttons {margin:0 0 20px 140px}
+
+/* wrapper */
+iframe { border:none; }
+
+/* System Messages */
+#system-message{margin:0}
+#system-message dt{display:none}
+#system-message dd{background:none!important;padding:0!important}
+#system-message dd.message ul,#system-message dd.error ul,#system-message dd.notice ul{color:#222;font-weight:400;margin:0;padding:0}
+#system-message dd.message ul{background:#FFFEF4;border-top:1px solid #EAE8CC;border-bottom:1px solid #EAE8CC}
+#system-message dd.error ul{background:#fff3f4;border-top:1px solid #FF969B;border-bottom:1px solid #FF969B}
+#system-message dd.notice ul{background:#f4faff;border-top:1px solid #96ccff;border-bottom:1px solid #96ccff}
+#system-message dd.message ul li,#system-message dd.error ul li,#system-message dd.notice ul li{background:none;text-indent:0;text-align:center;margin:0;padding:8px 16px}
+.btn{-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;}
+
+
+/* Articles */
+.items-leading > div {
+	clear: both!important;
+}
+
+article time + header {
+	float: left;
+	padding-left: 104px;
+}
+article header {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 0 32px;
+	width: 100%;
+}
+article header + * {
+	clear: both;
+}
+article header h1 {
+	clear: both;
+	line-height: 52px;
+}
+article header h2 {
+	line-height: 46px;
+}
+
+article header ul {
+	overflow: hidden;
+	position: relative;
+	margin: 6px 0;
+}
+article header li {
+	float: left;
+	height: 12px;
+	padding: 6px;
+	font-size: 12px;
+	line-height: 1;
+}
+article header ul + ul li {
+	height: 28px;
+}
+article header > ul > li:after {
+	content: '|  ';
+	white-space: pre;
+	color: #b6b6b6;
+	position: relative;
+	left: 8px;
+}
+article header li:last-child:after {
+	content: '';
+}
+li.print-icon,
+li.email-icon {
+	padding: 0 6px 10px 6px;
+	line-height:2;
+} 
+li.print-icon a,
+li.email-icon a {
+	position: relative;
+	top: 3px;
+}
+li.print-icon a {
+	background: url(../images/system/printButton.png) top left no-repeat;
+	width:16px;
+	height:16px;
+	text-indent:-9999px;
+	float:left;
+	margin:3px 3px 0 0;
+}
+li.email-icon a {
+	background: url(../images/system/emailButton.png) top left no-repeat;
+	width:16px;
+	height:16px;
+	text-indent:-9999px;
+	float:left;
+	margin:3px 3px 0 0;
+}
+
+article header li a:hover {
+	color: #222;
+}
+article header + div,
+article header + p {
+	clear: both;
+}
+
+header ul {
+	list-style-type: none;
+}
+.content-links {
+	margin-bottom: 20px;
+}
+.filter-search .filter-search-lbl {
+	margin-top: 5px;
+}
+/* Weblinks */
+.edit fieldset > div {
+	clear: both;
+	padding: 5px 0;
+}
+.edit fieldset > div label {
+	display: block;
+	min-width: 120px;
+	float: left;
+}
+
+

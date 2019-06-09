@@ -1,0 +1,78 @@
+/* ============ LOGIN MODULE ============ */
+.sunfw-pos-left,
+.sunfw-pos-right {
+	.module-style {
+		margin-bottom: 20px;
+	}
+}
+.form-control {
+	height: auto;
+    padding: 8px 12px;
+	box-shadow: none;
+}
+.form-control,
+.input-group-addon {
+	border-color: #D1D6DE;
+}
+#login-form {
+	ul {
+		padding: 0;
+		margin: 15px 0 0;
+		li {
+			list-style: none;
+			line-height: 1.6;
+			padding: 0;
+		}
+	}
+}
+.bannergroup {
+	font-size: 18px;
+	line-height: 27px;
+	.banneritem {
+		margin: 15px 0;
+	}
+}
+/* ============ NEWSFEED MODULE ============ */
+.newsfeed-category {
+	.filters {
+		margin-bottom: 30px;
+	}
+	.category {
+		padding: 0;
+		li {
+			list-style: none;
+			line-height: 21px;
+			margin: 10px 0;
+		}
+	}
+}
+
+/* ============ STICKY MODULE ============ */
+div[class*=sunfw-pos-stick-] {
+    position: fixed;
+    z-index: 888888;
+}
+.sunfw-pos-stick-lefttop {
+	@include rtl-left(0);
+}
+.sunfw-pos-stick-righttop {
+    @include rtl-right(0);
+}
+.sunfw-pos-stick-leftmiddle {
+    @include rtl-left(0);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sunfw-pos-stick-rightmiddle {
+    @include rtl-right(0);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sunfw-pos-stick-leftbottom {
+    @include rtl-left(0);
+    bottom: 0;
+}
+.sunfw-pos-stick-rightbottom {
+    @include rtl-right(0);
+    bottom: 0;
+}

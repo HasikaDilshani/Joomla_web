@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+<name>tc_theme29</name>
+<creationDate>2019</creationDate>
+<author>themescreative</author>
+<authorEmail>support@themescreative.com</authorEmail>
+<authorUrl>http://www.themescreative.com</authorUrl>
+<copyright>Copyright (C) 2019 themescreative. All rights reserved.</copyright>
+<version>3.5.3</version>
+<description><![CDATA[
+	<div class="overview" style="text-align:left">
+<p><img src="../templates/tc_theme29/template_thumbnail.png" style="float:left;margin-bottom:10px;border:4px solid #ccc;padding:2px" /><p style="clear:left;margin:10px 0;font-size:110%;">tc_theme29 free version template designed by <a href="http://www.themescreative.com/">themescreative</a>. The template is based on bootstrap framework Grid.<br>To remove "designed by themescreative" and to have all template features, purchase the <a href="http://www.themescreative.com/joomla-pro-templates.html/"> pro version</a>.</p>
+<p style="clear:left;margin:10px 0;font-size:110%;">Extensions, pro template, demo sql, readme-help-guide are included in <a href="http://www.themescreative.com/joomla-template-packages.html/"> full package</a> </p>
+	</div>
+]]></description>
+    <updateservers>
+        <server type="extension" priority="1" name="tc_theme29">https://www.themescreative.com/updates/tc_theme29_free.xml</server>
+    </updateservers>
+<files>
+	<filename>component.php</filename>
+	<filename>offline.php</filename>
+	<filename>error.php</filename>
+	<filename>favicon.ico</filename>
+	<filename>index.html</filename>
+	<filename>template_preview.png</filename>
+	<filename>template_thumbnail.png</filename>
+	<filename>index.php</filename>
+	<folder>css/</folder> 
+	<folder>html/</folder> 
+	<folder>images/</folder> 
+	<folder>language/</folder> 
+	<folder>slider</folder>
+	<folder>tclibs/</folder> 
+</files>
+<positions>
+	<position>adverts1</position>
+	<position>adverts2</position>
+	<position>adverts3</position>
+	<position>adverts4</position>
+	<position>adverts5</position>
+	<position>adverts6</position>
+	<position>header1</position>
+	<position>header2</position>
+	<position>header3</position>
+	<position>header4</position>
+	<position>header5</position>
+	<position>header6</position>
+	<position>top1</position>
+	<position>top2</position>
+	<position>top3</position>
+	<position>top4</position>
+	<position>top5</position>
+	<position>top6</position>
+	<position>maintop1</position>
+	<position>maintop2</position>
+	<position>maintop3</position>
+	<position>maintop4</position>
+	<position>maintop5</position>
+	<position>maintop6</position>
+	<position>info1</position>
+	<position>info2</position>
+	<position>info3</position>
+	<position>info4</position>
+	<position>info5</position>
+	<position>info6</position>
+	<position>feature1</position>
+	<position>feature2</position>
+	<position>feature3</position>
+	<position>feature4</position>
+	<position>feature5</position>
+	<position>feature6</position>
+	<position>left</position>
+	<position>inset</position>
+	<position>right</position>
+	<position>mainbottom1</position>
+	<position>mainbottom2</position>
+	<position>mainbottom3</position>
+	<position>mainbottom4</position>
+	<position>mainbottom5</position>
+	<position>mainbottom6</position>
+	<position>slider1</position>
+	<position>slider2</position>
+	<position>slider3</position>
+	<position>slider4</position>
+	<position>slider5</position>
+	<position>slider6</position>
+	<position>bottom1</position>
+	<position>bottom2</position>
+	<position>bottom3</position>
+	<position>bottom4</position>
+	<position>bottom5</position>
+	<position>bottom6</position>
+	<position>footer1</position>
+	<position>footer2</position>
+	<position>footer3</position>
+	<position>footer4</position>
+	<position>footer5</position>
+	<position>footer6</position>
+	<position>debug</position>
+</positions>		
+	<languages folder="language">
+		<language tag="en-GB">en-GB.tpl_tc_theme29.ini</language>
+	</languages>
+<config>
+ <fields name="params">
+    <fieldset name="general" label="General" addfieldpath="/templates/tc_theme29/tclibs/helper/fields">  
+		<field name="copyright" type="radio" default="1" label="Copyright" description="Choose to show the copyright information and pick copyright position.">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="cpright" type="text" default="Copyright (c) Site Name 2019. All rights reserved." label="Copyright text" description="Enter your Copyright text" /> 
+		<field type="spacer" label="ONLY_IN_PRO" />	 
+        <field name="TempWidth" type="text" default="960px" label="Template width" description="Enter template width."  disabled="true"/>
+		<field name="layout" type="list" default="lbr" label="Template Layout" description="Layout style of the template" class="tc-chosen-select">
+			<option value="" disabled="true">Body + Right</option>
+			<option value="" disabled="true">Left + Body</option>
+			<option value="lbr" disabled="true">Left + Body + Right</option>
+		</field>
+	</fieldset>
+	<!--  LOGO  -->	
+	<fieldset name="logo" label="Logo">
+        <field name="logo" type="radio" default="0" label="Select logo type" description="Select image or text type logo." class="logoType">
+			<option value="0">Template</option>
+			<option value="1">Image</option>
+			<option value="2">Text</option>
+		</field>
+		<field name="logopos" type="listposition" default="header1" label="Logo Position" description="Select the location to display the logo" />
+		<field name="logoimage" type="media" label="Logo image" description="" class="logo1" />
+		<field name="logotext" type="text" default="TC LOGO" label="Logo Text" description="Enter your logo text here. This setting take effect when the TEXT logo type is selected." class="logo2" />
+		<field name="slogan" type="text" default="Your slogan goes here" label="Slogan" description="Enter a slogan line or short description. This will be visible below the TEXT logo in your front-end." class="logo2"/>
+	</fieldset>	
+	<!--  SLIDER  -->
+	<fieldset name="header" label="Slider">
+		<field name="slides" type="list" default="0" label="Slideshow" description="To show the Slideshow on specific pages, select [Show only in header]. After go in Extensions - Module manager and create an empty module and assign it to position slider. Use this module to control which pages have header visible">
+			<option value="1">Show on all pages</option>
+			<option value="2">Show only in header</option>
+			<option value="0">Hide</option>
+		</field>		
+			<field type="spacer" label="First Slide"/>		
+				<field name="jukenburn_thumb1" type="media" default="" label="Slider Image 1" description="Please choose an image..." />
+				<field name="jukenburn_texts1" type="text" default="" label="First line (pro)" description="Write here first line text" disabled="true" />
+				<field name="jukenburn_desc1" type="text" default="" label="Second line (pro)" description="Write here second line text" disabled="true" />
+				<field name="jukenburn_info1" type="text" default="" label="Third line (pro)" description="Write here third line text" disabled="true" />
+				<field name="jukenburn_text1" type="text" default="" label="Read more link (pro)" description="Link for read more button" disabled="true" />
+				<field type="spacer" label="Second Slide"/>	
+				<field name="jukenburn_thumb2" type="media" default="" label="Slider Image 2" description="Please choose an image..." />
+				<field name="jukenburn_texts2" type="text" default="" label="First line (pro)" description="Write here first line text" disabled="true" />
+				<field name="jukenburn_desc2" type="text" default="" label="Second line (pro)" description="Write here second line text" disabled="true" />
+				<field name="jukenburn_info2" type="text" default="" label="Third line (pro)" description="Write here third line text" disabled="true" />
+				<field name="jukenburn_text2" type="text" default="" label="Read more link (pro)" description="Link for read more button" disabled="true" />
+				<field type="spacer" label="Third Slide"/>
+				<field name="jukenburn_thumb3" type="media" default="" label="Slider Image 3" description="Please choose an image..." />
+				<field name="jukenburn_texts3" type="text" default="" label="First line (pro)" description="Write here first line text" disabled="true" />
+				<field name="jukenburn_desc3" type="text" default="" label="Second line (pro)" description="Write here second line text" disabled="true" />
+				<field name="jukenburn_info3" type="text" default="" label="Third line (pro)" description="Write here third line text" disabled="true" />
+				<field name="jukenburn_text3" type="text" default="" label="Read more link (pro)" description="Link for read more button" disabled="true" />
+				<field type="spacer" label="Fourth Slide"/>
+				<field name="jukenburn_thumb4" type="media" default="" label="Slider Image 4" description="Please choose an image..." />
+				<field name="jukenburn_texts4" type="text" default="" label="First line (pro)" description="Write here first line text" disabled="true" />
+				<field name="jukenburn_desc4" type="text" default="" label="Second line (pro)" description="Write here second line text" disabled="true" />
+				<field name="jukenburn_info4" type="text" default="" label="Third line (pro)" description="Write here third line text" disabled="true" />
+				<field name="jukenburn_text4" type="text" default="" label="Read more link (pro)" description="Link for read more button" disabled="true" />
+				<field type="spacer" label="Fifth Slide"/>
+				<field name="jukenburn_thumb5" type="media" default="" label="Slider Image 5" description="Please choose an image..." />
+				<field name="jukenburn_texts5" type="text" default="" label="First line (pro)" description="Write here first line text" disabled="true" />
+				<field name="jukenburn_desc5" type="text" default="" label="Second line (pro)" description="Write here second line text" disabled="true" />
+				<field name="jukenburn_info5" type="text" default="" label="Third line (pro)" description="Write here third line text" disabled="true" />
+				<field name="jukenburn_text5" type="text" default="" label="Read more link (pro)" description="Link for read more button" disabled="true" />	
+				<field type="spacer" label="Sixth Slide"/>
+				<field name="jukenburn_thumb6" type="media" default="" label="Slider Image 6" description="Please choose an image..." />
+				<field name="jukenburn_texts6" type="text" default="" label="First line (pro)" description="Write here first line text" disabled="true" />
+				<field name="jukenburn_desc6" type="text" default="" label="Second line (pro)" description="Write here second line text" disabled="true" />
+				<field name="jukenburn_info6" type="text" default="" label="Third line (pro)" description="Write here third line text" disabled="true" />
+				<field name="jukenburn_text6" type="text" default="" label="Read more link (pro)" description="Link for read more button" disabled="true" />
+		<field type="spacer" label="ONLY_IN_PRO" />					
+				<field type="spacer" label="Slider settigns"/>	
+				<field name="headHeigh" type="text" default="550" label="Header Height" description="Put a size for the header height"  disabled="true" />
+				<field name="bannerTime" type="list" default="0" label="Banner Time" description="Banner Time show hide.">
+                    <option value="1" disabled="true">Show</option>
+                    <option value="0">Hide</option>
+				</field>				    
+				<field name="banner" type="list" default="on" label="Stop Timer on Hover" description="Stop Banner Timet at Hover on Slide on/off.">
+					<option value="off" disabled="true">Off</option>
+					<option value="on">On</option>
+				</field>
+				<field name="menu" type="list" default="none" label="Navigation Type" description="Navigation Type bullet, thumb, none.">
+					<option value="bullet" disabled="true">Bullet</option>
+					<option value="none">None</option>
+				</field>							
+				<field name="styles" type="list" default="round" label="Navigation Style" description="Navigation Style round,square,navbar.">
+					<option value="round">Round</option>
+					<option value="square" disabled="true">Square</option>
+					<option value="navbar" disabled="true">Navbar</option>
+				</field>				
+				<field name="speed" type="list" default="7000" label="Speed of Annimation" description="This is the time at which the annimation happens.">
+					<option value="3000" disabled="true">3 Seconds</option>
+					<option value="4000" disabled="true">4 Seconds</option>
+					<option value="5000" disabled="true">5 Seconds</option>
+					<option value="6000" disabled="true">6 Seconds</option>
+					<option value="7000">7 Seconds</option>
+					<option value="8000" disabled="true">8 Seconds</option>
+					<option value="9000" disabled="true">9 Seconds</option>
+					<option value="10000" disabled="true">10 Seconds</option>
+					<option value="11000" disabled="true">11 Seconds</option>
+					<option value="12000" disabled="true">12 Seconds</option>
+					<option value="13000" disabled="true">13 Seconds</option>
+					<option value="14000" disabled="true">14 Seconds</option>
+					<option value="15000" disabled="true">15 Seconds</option>
+					<option value="16000" disabled="true">16 Seconds</option>
+					<option value="17000" disabled="true">17 Seconds</option>
+					<option value="18000" disabled="true">18 Seconds</option>
+					<option value="19000" disabled="true">19 Seconds</option>
+					<option value="20000" disabled="true">20 Seconds</option>
+					<option value="30000" disabled="true">30 Seconds</option>
+				</field>
+	</fieldset>			
+	<!--  MENU  -->
+	<fieldset name="menu" label="Menu">
+		<field name="menucontrol" type="radio" default="1" label="Menu control" description="Enable or disable the menu as well as select the menu type">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="menutype" type="menu" default="mainmenu" label="Select a Menu" description="Select a menu group to display in the main menu"/>
+		<field type="spacer" label="ONLY_IN_PRO" />
+		<field name="menupos" type="text" default="header2" label="Menu Position" description="Select the location to display the main menu" disabled="true" />	
+		<field name="menuTrigger" type="list" default="hover" label="Dropdown Trigger" description="Mouse Event to trigger dropdown menu" class="tc-chosen-select">
+		  <option value="hover" disabled="true" >Mouse Hover</option>
+		  <option value="" disabled="true">Mouse Click</option>
+		</field>
+        <field name="menuEffect" type="list" default="fade" label="Transition" description="Select an effect for the menu" class="tc-chosen-select">
+			<option value="fade" disabled="true">Fade</option>
+			<option value="" disabled="true">Blind</option>
+			<option value="" disabled="true">Slide</option>
+			<option value="" disabled="true">Fold</option>
+			<option value="" disabled="true">Bounce</option>
+        </field>
+        <field name="startLevel" type="text" default="0" size="5" label="Start level" description="Level from which to show items"  disabled="true"/>
+	    <field name="endLevel" type="text" default="10" size="5" label="End level" description="Level until which to show items"  disabled="true"/>
+	</fieldset>
+
+	<!-- Offline settings -->
+	<fieldset name="Offline" label="Offline page">
+		<field type="spacer" label="Time for Offline" />	
+		<field name="off_sitedate" type="radio" class="btn-group" default="1" label="Show date" description="Show Offsite date counting">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>			
+		<field name="off_year" type="text" default="2014" label="Year" description="year" />
+		<field name="off_month" type="text" default="06" label="Month" description="Month" />
+		<field name="off_day" type="text" default="22" label="Day" description="Day" />
+		<field type="spacer" label="Text for Offline site" />
+		<field name="off_content" type="editor" default="This site is down for maintenance. Please check back again soon." label="Content" description="Content" filter="raw"/>	
+	</fieldset>	
+	
+	<!--  LAYOUT  -->
+	<fieldset name="layout" label="Layout (only in PRO )">	
+		<field name="layoutscript" type="gridscript" label="" />
+		<field name="adverts" type="listgrid" default="1" />
+		<field name="header" type="listgrid" default="3|header1:3,header2:8,header3:1" />
+		<field name="slider" type="listgrid" default="1" />
+		<field name="top" type="listgrid" default="1" />
+		<field name="info" type="listgrid" default="3" />
+		<field name="maintop" type="listgrid" default="4" />
+		<!-- /// Start Component layout /// -->
+		<field name="lbr" type="listgrid" class="main-content lbr" default="3|left:3,inset:6,right:3" />
+		<field name="lb" type="listgrid" class="main-content lb" default="2|left:3,inset:9" />
+		<field name="br" type="listgrid" class="main-content br" default="2|inset:9,right:3" />
+		<!-- /// End Component layout /// -->
+		<field name="feature" type="listgrid" default="1" />
+		<field name="mainbottom" type="listgrid" default="1" />
+		<field name="bottom" type="listgrid" default="3" />
+		<field name="footer" type="listgrid" default="2|footer1:7,footer2:5" />	
+	</fieldset>
+
+	<!--  COLORS  -->	
+	<fieldset name="color" label="Color Styles ( only in PRO )">
+	<field type="spacer" label="ONLY_IN_PRO" />	
+		<field name="TemplateStyle" type="list" default="style3" label="Template Style" description="The Main Color Variation for the Template" class="tc-chosen-select">
+			<option value="style1" disabled="true">Blue</option>
+			<option value="" disabled="true">Green</option>
+			<option value="style3" disabled="true">Orange</option>
+			<option value="" disabled="true">Red</option>
+		</field>
+		<field type="spacer" label="Custom Template Color" />	
+        <field name="CustomStyle" type="text" default="" label="Custom Template Color" description="Custom Main Color Variation for the Template"  disabled="true" />
+		<field type="spacer" label="Menu" />
+        <field name="MenuTextColor" type="text" default="" label="Text color" description="Enter Menu text color"  disabled="true"  />
+        <field name="MenuColor" type="text" default="" label="Background color" description="Enter Menu Background"  disabled="true"  />
+		<field type="spacer" label="Slider" />	
+        <field name="HeadColor" type="text" default="" label="Background color" description="Enter Slider Background"  disabled="true" />
+		<field type="spacer" label="Top" />	
+        <field name="TopTextColor" type="text" default="" label="Text color" description="Enter Top Text Color"  disabled="true" />
+        <field name="TopColor" type="text" default="" label="Background color" description="Enter Top Background"  disabled="true" />
+		<field type="spacer" label="Bottom" />
+        <field name="BottomTextColor" type="text" default="" label="Text color" description="Enter Bottom text color"  disabled="true" />
+        <field name="BottomColor" type="text" default="" label="Background color" description="Enter Bottom Background"  disabled="true" />
+	</fieldset>		
+	<!-- Social settings -->
+	<fieldset name="icons" description="" label="Social Icons ( Only in PRO )">
+		<field name="socialCode" type="radio" default="1" label="SOCIAL_LABEL" description="SOCIAL_DESC">
+			  <option value="1" disabled="true">Yes</option>
+			  <option value="0" disabled="true">No</option>
+		</field>									
+	<field name="facebook_icon" type="text" default="" label="Your facebook Url" description="Your facebook Url"  disabled="true"/>
+	<field name="twitter_icon" type="text" default="" label="Your twitter Url" description="Your twitter Url" disabled="true" />
+	<field name="digg_icon" type="text" default="" label="Your digg_ Url" description="Your digg_ Url" disabled="true" />
+	<field name="google_icon" type="text" default="" label="Your Google Url" description="Your Google Url" disabled="true" />
+	<field name="myspace_icon" type="text" default="" label="Your myspace Url" description="Your myspace Url" disabled="true" />
+	<field name="linkedin_icon" type="text" default="" label="Your linkedin Url" description="Your linkedin Url" disabled="true" />
+	<field name="blogger_icon" type="text" default="" label="Your blogger Url" description="Your blogger Url" disabled="true" />
+	<field name="flickr_icon" type="text" default="" label="Your flickr Url" description="Your flickr Url" disabled="true" />
+	<field name="stumble_icon" type="text" default="" label="Your stumble Url" description="Your stumble Url" disabled="true" />
+	<field name="pinterest_icon" type="text" default="" label="Your pinterest Url" description="Your pinterest Url" disabled="true" />
+	<field name="rssfeed_icon" type="text" default="" label="Your rssfeed Url" description="Your rssfeed Url" disabled="true" />
+	</fieldset>	
+	<!--  FONTS  -->	
+	<fieldset name="fonts" label="Fonts ( Only in PRO )">
+		<field type="spacer" label="ONLY_IN_PRO" />	
+		<field type="spacer" label="Body" />		
+	    <field name="fontfamily" type="list" default="Arial, Helvetica, sans-serif" label="Font family" description="Select the font family for your front-end."  class="tc-chosen-select">	
+		<option value="Arial, Helvetica, sans-serif" disabled="true">Arial, Helvetica, sans-serif</option>
+		<option value="Georgia, 'Times New Roman', Times, serif" disabled="true">Georgia, 'Times New Roman', Times, serif</option>
+		<option value="Tahoma, Geneva, sans-serif" disabled="true">Tahoma, Geneva, sans-serif</option>
+		<option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif" disabled="true">'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+		<option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif" disabled="true">'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+		<option value="'Trebuchet MS', Arial, Helvetica, sans-serif" disabled="true">'Trebuchet MS', Arial, Helvetica, sans-serif</option>
+	</field>
+		<field name="fontsize" type="list" default="" label="Font size" description="Select the font size for your front-end." class="tc-chosen-select">
+			<option value=""  disabled="true">default</option>
+			<option value="10px"  disabled="true">10px</option>
+			<option value="11px"  disabled="true">11px</option>
+			<option value="12px"  disabled="true">12px</option>
+			<option value="13px"  disabled="true">13px</option>
+			<option value="14px"  disabled="true">14px</option>
+			<option value="15px"  disabled="true">15px</option>
+			<option value="16px"  disabled="true">16px</option>
+			<option value="17px"  disabled="true">17px</option>
+			<option value="18px"  disabled="true">18px</option>
+			<option value="19px"  disabled="true">19px</option>
+			<option value="20px"  disabled="true">20px</option>
+		</field>	
+		<field type="spacer" label="Titles" />			
+	    <field name="Titlefontfamily" type="list" default="" label="Font family" description="Select the font family for Titles" class="tc-chosen-select" >	
+			<option value="Arial, Helvetica, sans-serif" disabled="true">Arial, Helvetica, sans-serif</option>
+			<option value="Georgia, 'Times New Roman', Times, serif" disabled="true">Georgia, 'Times New Roman', Times, serif</option>
+			<option value="Tahoma, Geneva, sans-serif" disabled="true">Tahoma, Geneva, sans-serif</option>
+			<option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif" disabled="true">'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+			<option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif" disabled="true">'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+			<option value="'Trebuchet MS', Arial, Helvetica, sans-serif" disabled="true">'Trebuchet MS', Arial, Helvetica, sans-serif</option>
+		</field>
+		<field name="h1_font_size" type="text" default="30px" label="H1 size" description="" disabled="true"/>
+		<field name="h2_font_size" type="text" default="28px" label="H2 size" description="" disabled="true"/>
+		<field name="h3_font_size" type="text" default="24px" label="H3 size" description="" disabled="true"/>
+		<field name="h4_font_size" type="text" default="22px" label="H4 size" description="" disabled="true"/>
+		<field name="h5_font_size" type="text" default="18px" label="H5 size" description="" disabled="true"/>
+		<field name="h6_font_size" type="text" default="16px" label="H6 size" description="" disabled="true"/>	
+		<field type="spacer" label="Menu" />			
+	    <field name="Menufontfamily" type="list" default="" label="Font family" description="Select the font family for menu" class="tc-chosen-select" >	
+		<option value="Arial, Helvetica, sans-serif" disabled="true">Arial, Helvetica, sans-serif</option>
+		<option value="Georgia, 'Times New Roman', Times, serif" disabled="true">Georgia, 'Times New Roman', Times, serif</option>
+		<option value="Tahoma, Geneva, sans-serif" disabled="true">Tahoma, Geneva, sans-serif</option>
+		<option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif" disabled="true">'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+		<option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif" disabled="true">'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+		<option value="'Trebuchet MS', Arial, Helvetica, sans-serif" disabled="true">'Trebuchet MS', Arial, Helvetica, sans-serif</option>
+	</field>
+		<field name="Menufontsize" type="list" default="" label="Font size" description="Select the font size for menu." class="tc-chosen-select">
+			<option value=""  disabled="true">default</option>
+			<option value="10px"  disabled="true">10px</option>
+			<option value="11px"  disabled="true">11px</option>
+			<option value="12px"  disabled="true">12px</option>
+			<option value="13px"  disabled="true">13px</option>
+			<option value="14px"  disabled="true">14px</option>
+			<option value="15px"  disabled="true">15px</option>
+			<option value="16px"  disabled="true">16px</option>
+			<option value="17px"  disabled="true">17px</option>
+			<option value="18px"  disabled="true">18px</option>
+			<option value="19px"  disabled="true">19px</option>
+			<option value="20px"  disabled="true">20px</option>
+		</field>	
+	</fieldset>	
+	<!--  FEATURES  -->
+	<fieldset name="advance" label="Advance ( Only in PRO )">
+	<field type="spacer" label="ONLY_IN_PRO" />				
+		<field name="totop" type="radio" default="1" label="To-Top Scroller" description="Show the to-top scroller" disabled="true">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+        <field name="totopText" type="text" default="Go to Top" label="To-Top Scroller text" description="Enter To-Top Scroller text."  disabled="true"/>
+		<field name="responsive" type="radio" default="0" label="Responsive Layout" description="Enable responsive layout">
+			<option value="0" disabled="true">JNO</option>
+			<option value="1" disabled="true">JYES</option>
+		</field>
+		<field name="show_Designed" type="radio" default="1" class="btn-group" label="Show designed" description="Enable Show designed">
+			<option value="0" disabled="true">JHIDE</option>
+			<option value="1" disabled="true">JSHOW</option>
+		</field>
+		<field name="IE6Warning" type="radio" default="1" label="IE7 Warning" description="Choose whether or not to display the IE7 Warning for IE7 Browser.">
+			<option value="0" disabled="true">JHIDE</option>
+			<option value="1" disabled="true">JSHOW</option>
+		</field>
+		<field name="GoogleAnalytics" type="radio" default="0" label="Google Analytics" description="">
+			<option value="0" disabled="true">JHIDE</option>
+			<option value="1" disabled="true">JSHOW</option>
+		</field>
+		<field name="googcode" type="text" default="" label="Google Analytics Code" description="Enter your Google tracking code in the UA Code field. It should look something like: UA-34555555-1" disabled="true"/>
+		<field name="jquery" type="radio" default="2" label="jQuery library" description="Select YES to insert the jquery library on your website">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			<option value="2">Auto</option>
+		</field>
+
+      </fieldset>
+	</fields>
+  </config>
+</extension>

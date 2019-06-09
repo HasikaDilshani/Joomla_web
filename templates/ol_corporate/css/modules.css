@@ -1,0 +1,111 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Sboost Framework   
+# ---------------------------------------------------------------
+# Author - olwebdesign http://www.olwebdesign.com
+# Copyright (C) 2008 - 2017 olwebdesign.com. All Rights Reserved.
+# Websites: http://www.olwebdesign.com
+-----------------------------------------------------------------*/
+
+.mod-wrapper,.mod-wrapper-flat {position:relative}
+.module h3 {font-size:19px;line-height:normal;margin:0 0 5px;}
+
+.mod-wrapper ul{list-style:none;margin:0;padding:0}
+.mod-wrapper li{background:none;margin:0;padding:4px 0px}
+.mod-wrapper li li{margin-left:10px;border-bottom:0!important}
+.mod-wrapper li a{text-decoration:none}
+.mod-wrapper li:hover > a, .mod-wrapper li.active > a{text-decoration:none}
+
+/*Suffix menu*/
+.module.menu ul.menu li {padding:5px 7px;margin:0;background:none}
+.module.menu ul.menu li a {padding:0;margin:0}
+.module.menu ul.menu li:hover,
+.module.menu ul.menu li.active {background:none}
+.module.menu ul.menu li:hover > a {background:none}
+/*Start Module Variations*/
+
+/*Module Type Menu*/
+.mod-wrapper-menu {margin-top:8px}
+.mod-wrapper-menu h3.header{font-size:12px;font-weight:700;color:#000;margin:0;padding:2px 5px}
+.mod-wrapper-menu ul{list-style:none;margin:0;padding:0}
+.mod-wrapper-menu li{font-size:11px;display:block;text-decoration:none;margin:0;padding:4px}
+.mod-wrapper-menu li a:hover{text-decoration:underline}
+
+.white {
+	color: #333;
+	background-color: #fff;
+	margin: 0 auto 10px auto;
+	padding: 5px 10px;
+}
+.white:hover {
+	color: #333;
+	background-color: #f9f9f9;
+}
+.beige {
+	color: #000;
+	background-color: #f9f4ed;
+	margin: 0 auto 10px auto;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+}
+
+.greys {
+	color: #000;
+	background-color: #fafafa;
+	margin: 0 auto 5px auto;
+	padding: 5px 10px;
+}
+.greys:hover {
+	color: #000;
+	background-color: #eaeaea;
+}
+.reds {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #c00;
+	padding: 5px 10px;
+}
+.blues {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #1aa1e1;
+	padding: 5px 10px;
+}
+.greens {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #99cc33;
+	padding: 5px 10px;
+}
+.oranges {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #f57900;
+	padding: 5px 10px;
+}
+
+.colors {
+	color: #222;
+	margin: 0 auto 10px auto;
+	padding: 5px;
+}
+
+.white h3, .greys h3, .beige h3, .dark h3, .colors h3, .dark h3, .reds h3, .blues h3, .greens h3, .oranges h3{ margin: -5px -10px 3px -10px;  font-size: 1.5em; line-height:34px; padding: 2px 10px;
+
+}
+
+.dark {
+	background-color: #444;
+	margin: 0 auto 10px auto;
+	color: #ddd;
+	padding: 5px 10px;
+}
+.dark ul, .mcolor ul, .white ul {
+	padding-left: 5px;
+}
+
+.dark a { color: #ddd !important; text-decoration: underline;}
+
+.med {
+    border: 10px solid #eeeeee;
+    padding: 20px !important;
+}

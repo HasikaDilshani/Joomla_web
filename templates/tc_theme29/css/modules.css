@@ -1,0 +1,104 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Sboost Framework   
+# ---------------------------------------------------------------
+# Author - themescreative http://www.themescreative.com
+# Copyright (C) 2008 - 2017 themescreative.com. All Rights Reserved.
+# Websites: http://www.themescreative.com
+-----------------------------------------------------------------*/
+
+/*Module type SP_XHTML*/
+.mod-wrapper {position:relative;}
+.module{
+	margin: 0 auto 5px auto;
+	padding: 2px;}
+
+.white {
+	color: #333;
+	background-color: #fff;
+	margin: 0 auto 10px auto;
+	border: 1px solid #f1f1f1;
+	padding: 5px 10px;
+}
+.white:hover {
+	color: #333;
+	background-color: #f9f9f9;
+}
+.beige {
+	color: #000;
+	background-color: #f9f4ed;
+	margin: 0 auto 10px auto;
+	padding: 5px 10px;
+}
+
+.greys {
+	color: #333;
+	background-color: #f9f9f9;
+	margin: 0 auto 5px auto;
+	padding: 5px 10px;
+	border: 1px solid #f1f1f1;
+}
+.greys:hover {
+	color: #333;
+	background-color: #f1f1f1;
+}
+.reds {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #c00;
+	padding: 5px 10px;
+}
+.blues {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #3266ad;
+	padding: 5px 10px;
+}
+.greens {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #99cc33;
+	padding: 5px 10px;
+}
+.oranges {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #f87d52;
+	padding: 5px 10px;
+}
+
+.colors {
+	color: #222;
+	margin: 0 auto 10px auto;
+	padding: 5px;
+}
+
+.mod-wrapper h3{  margin: -3px -4px 3px -4px; line-height:34px; padding: 2px 10px; background:url(../images/h3_mod.png) repeat-x 0 100%;}
+
+.dark {
+	background-color: #444;
+	margin: 0 auto 10px auto;
+	color: #ddd;
+	padding: 5px 10px;
+}
+.dark ul, .mcolor ul, .white ul {
+	padding-left: 5px;
+}
+
+.dark a { color: #ddd !important; text-decoration: underline;}
+
+.module h3{font-size: 150%;}
+
+.colors, .oranges, .greens, .blues, .reds, .greys, .beige, .white, .dark {
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.colors:hover, .oranges:hover, .greens:hover, .blues:hover, .reds:hover, .greys:hover, .beige:hover, .white:hover, .dark:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);}

@@ -1,0 +1,69 @@
+/*!
+ * Sun Framework
+ * Copyright 2016 Joomlashine.
+ * @file _module-style.scss
+ */
+.module-title i.fa {
+  @include rtl-padding-right(8px);
+  @include rtl-padding-left(0);
+}
+.sunfw-pos-left > .module-style,.sunfw-pos-right > .module-style{
+	margin-bottom: 20px;
+}
+.module-style[class*='solid-box-']{	
+	box-shadow: 0 2px 2px 0 #dbe1e7;
+	border-radius: 3px;
+	.module-title{
+		.box-title{
+			font-size: 18px;
+			font-weight: bold;
+			padding: 22px 20px 16px;
+			margin: 0;
+			border-radius: 3px 3px 0 0;
+		}
+	}
+	.module-body{
+		padding: 15px 20px 20px;
+		p:last-child{
+			margin-bottom: 0;
+		}
+		ul.newsfeed, ul.archive-module, ul.relateditems, ul.categories-module, ul.category-module, ul.mostread, ul.latestnews, ul.latestusers{
+			padding-left: 0;
+		}
+	}
+}
+.module-style[class*='plain-box-']{	
+	.module-title{
+		.box-title{
+			font-size: 18px;
+			font-weight: bold;
+			padding: 15px 0px;
+			margin: 0;
+		}
+	}
+	.module-body{
+		padding: 15px 0 0;
+		p:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.module-style{
+	&.solid-box-1 .module-title{
+		border-bottom: solid 1px #ebebeb;
+	}	
+	&.plain-box-1 .module-title{
+		border-bottom: solid 1px #ebebeb;
+	}
+	&.plain-box-3 {
+		box-shadow: 0 2px 2px 0 #dbe1e7;
+		border-radius: 3px;
+	}
+	&.plain-box-2 {
+		box-shadow: 0 2px 2px 0 #dbe1e7;
+		border-radius: 3px;
+		.module-title{
+			border-bottom: solid 1px #dbe1e7;
+		}
+	}		
+}

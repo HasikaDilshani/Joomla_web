@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="image_modal" class="image-subform">
+		<field name="img" type="media" default="" label="Image Background"  description="Browse for image" size="30" />
+
+		<field type="list" name="sldur" label="Slide duration time" description="Time duration the slide" default="5000">
+			<option value="3500">3.5 sec</option>
+			<option value="4000">4 sec</option>
+			<option value="5000">5 sec</option>
+			<option value="6000">6 sec</option>
+			<option value="7000">7 sec</option>
+			<option value="8000">8 sec</option>
+			<option value="9000">9 sec</option>
+			<option value="10000">10 sec</option>
+			<option value="15000">15 sec</option>
+			<option value="20000">20 sec</option>
+		</field>
+			
+		<field type="list" name="trans" label="Fransition effect" description="Fransition effect for frist image" default="">
+			<option value="">Random</option>
+			<option value="1">Spinning tile to right</option>
+			<option value="2">Spinning tile to left</option>
+			<option value="3">Spinning tile to bottom</option>
+			<option value="4">Spinning tile to top</option>
+			<option value="5">Spinning tiles to right</option>
+			<option value="6">Spinning tiles to left</option>
+			<option value="7">Spinning tiles to bottom</option>
+			<option value="8">Spinning tiles to top</option>
+			<option value="9">Horizontal spinning tiles random</option>
+			<option value="10">Vertical spinning tiles random</option>
+			<option value="11">Scaling and spinning tiles to right</option>
+			<option value="12">Scaling and spinning tiles to left</option>
+			<option value="13">Scaling and spinning tiles to bottom</option>
+			<option value="14">Scaling and spinning tiles to top</option>
+			<option value="15">Scaling and horizontal spinning tiles random</option>
+			<option value="16">Scaling and vertical spinning tiles random</option>
+			<option value="17">Spinning rows to right</option>
+			<option value="18">Spinning rows to left</option>
+			<option value="19">Spinning rows to bottom</option>
+			<option value="20">Spinning rows to top</option>
+			<option value="21">Horizontal spinning rows random</option>
+			<option value="22">Vertical spinning rows random</option>
+			<option value="23">Vertical spinning rows random</option>
+			<option value="24">Scaling and spinning rows to right</option>
+			<option value="25">Scaling and spinning rows to left</option>
+			<option value="26">Scaling and spinning rows to bottom</option>
+			<option value="27">Scaling and spinning rows to top</option>
+			<option value="28">Scaling and horizontal spinning rows random</option>
+			<option value="29">Scaling and vertical spinning rows random</option>
+			<option value="30">Spinning columns to right</option>
+			<option value="31">Spinning columns to left</option>
+			<option value="32">Spinning columns to bottom</option>
+			<option value="33">Spinning columns to top</option>
+			<option value="34">Horizontal spinning columns random</option>
+			<option value="35">Vertical spinning columns random</option>
+			<option value="36">Horizontal spinning columns random</option>
+			<option value="37">Scaling and spinning columns to right</option>
+			<option value="38">Scaling and spinning columns to left</option>
+			<option value="39">Scaling and spinning columns to bottom</option>
+			<option value="40">Scaling and spinning columns to top</option>
+			<option value="41">Scaling and horizontal spinning columns random</option>
+			<option value="42">Scaling and vertical spinning columns random</option>
+			<option value="43">Drunk colums scaling and spinning to right</option>
+			<option value="44">Drunk colums scaling and spinning to left</option>
+			<option value="45">Turning cuboid to right</option>
+			<option value="46">Turning cuboid to left</option>
+			<option value="47">Turning cuboid to bottom</option>
+			<option value="48">Turning cuboid to bottom</option>
+			<option value="49">Scaling and turning cuboid to right</option>
+			<option value="50">Scaling and turning cuboid to left</option>
+			<option value="51">Scaling and turning cuboids to right</option>
+			<option value="52">Scaling and turning cuboids to left</option>
+			<option value="53">Scaling and turning cuboids to bottom</option>
+			<option value="54">Scaling and turning cuboids to top</option>
+			<option value="55">Scaling and horizontal turning cuboids random</option>
+			<option value="56">Scaling and vertical turning cuboids random</option>
+			<option value="57">Turning rows to right</option>
+			<option value="58">Turning rows to lef</option>
+			<option value="59">Horizontal turning rows random</option>
+			<option value="60">Scaling and turning rows to right</option>
+			<option value="61">Scaling and turning rows to left</option>
+			<option value="62">Scaling and turning rows to bottom</option>
+			<option value="63">Scaling and turning rows to top</option>
+			<option value="64">Scaling and horizontal turning rows random</option>
+			<option value="65">Scaling and vertical turning rows random</option>
+			<option value="66">Scaling and horizontal turning drunk rows to right</option>
+			<option value="67">Scaling and horizontal turning drunk rows to left</option>
+			<option value="68">Turning columns to bottom</option>
+			<option value="69">Turning columns to top</option>
+			<option value="70">Vertical turning columns random</option>
+			<option value="71">Scaling and turning columns to bottom</option>
+			<option value="72">Scaling and turning columns to top</option>
+			<option value="73">Scaling and turning columns to right</option>
+			<option value="74">Scaling and turning columns to left</option>
+			<option value="75">Scaling and horizontal turning columns random</option>
+			<option value="76">Scaling and vertical turning columns random</option>
+			<option value="77">Scaling and vertical turning drunk columns to right</option>
+			<option value="78">Scaling and vertical turning drunk columns to left</option>
+			<option value="79">Spinning cuboid to right</option>
+			<option value="80">Spinning cuboid to left</option>
+			<option value="81">Spinning cuboid to bottom</option>
+			<option value="82">Spinning cuboid to top</option>
+			<option value="83">Scaling and spinning cuboids to right</option>
+			<option value="84">Scaling and spinning cuboids to right</option>
+			<option value="85">Scaling and spinning cuboids to bottom</option>
+			<option value="86">Scaling and spinning cuboids to top</option>
+			<option value="87">Scaling and horizontal spinning cuboids random</option>
+			<option value="88">Scaling and vertical spinning cuboids random</option>
+			<option value="89">Scaling and spinning rows to right</option>
+			<option value="90">Scaling and spinning rows to left</option>
+			<option value="91">Scaling and spinning rows to bottom</option>
+			<option value="92">Scaling and spinning rows to top</option>
+			<option value="93">Scaling and horizontal spinning rows random</option>
+			<option value="94">Scaling and vertical spinning rows random</option>
+			<option value="95">Scaling and spinning columns to bottom</option>
+			<option value="96">Scaling and spinning columns to top</option>
+			<option value="97">Scaling and spinning columns to right</option>
+			<option value="98">Scaling and spinning columns to left</option>
+			<option value="99">Scaling and horizontal spinning columns random</option>
+			<option value="100">Scaling and vertical spinning columns random</option>
+			<option value="45,46,47,48,49,50">Sett one</option>
+			<option value="15,16,17,18,19,20">Sett two</option>
+			<option value="68,69,67,68,65,63">Sett three</option>
+			<option value="78,79,77,78">Sett four</option>
+			<option value="88,89,87,88,80,81,83">Sett five</option>
+		</field>
+		<field name="title" type="text" default="" label="Main Title (pro)" description="Main Title"  disabled="true"/>
+		<field name="titleh" type="text" default="180" label="Title horizontal position (pro)"  disabled="true"/>
+		<field name="titlev" type="text" default="180" label="Title vertical position (pro)"  disabled="true"/>
+		<field name="titleco" type="color" default="" label="Title Background color (pro)" description="Title Background color example #f04705" />
+		<field name="decs" type="text" default="" label="Text Description (pro)"  disabled="true"/>
+		<field name="decsh" type="text" default="180" label="Text horizontal position (pro)"  disabled="true"/>
+		<field name="decsv" type="text" default="240" label="Text vertical position (pro)"  disabled="true"/>
+		<field name="decsco" type="color" default="" label="Text Background color (pro)" description="Text Background color example #333333" />
+		<field type="list" name="txwidth" label="Title and Text width (pro)" description="Title and Text width" default="400" disabled="true">
+			<option value="200">200</option>
+			<option value="250">250</option>
+			<option value="300">300</option>
+			<option value="350">350</option>
+			<option value="400">400</option>
+			<option value="450">450</option>
+			<option value="500">500</option>
+			<option value="550">550</option>
+			<option value="600">600</option>
+			<option value="650">650</option>
+			<option value="700">700</option>
+			<option value="750">750</option>
+			<option value="800">800</option>
+			<option value="900">900</option>
+			<option value="1000">1000</option>
+		</field>		
+		<field type="list" name="setparrall" label="Parallax (pro)" description="Use parallax" default="false" disabled="true">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</field>
+		<field type="texturl" name="url" default="" label="Link URL (pro)" target="_self" description="Here add the url link and select the target window"  disabled="true"/>
+		<field name="target" type="list" default="_self" label="Open link in new widow (pro)" description="Open your link to a new browser widow" disabled="true">
+			<option value="_self">No</option>
+			<option value="_blank">Yes</option>
+		</field>
+		<field name="readmore" type="text" default="Read More" label="Read more text (pro)" description="Write here the text for read more button"  disabled="true"/>	
+		<field name="linkh" type="text" default="180" label="Read more horizontal position (pro)"  disabled="true"/>
+		<field name="linkv" type="text" default="290" label="Read more vertical position (pro)"  disabled="true"/>
+		<field type="list" name="stve" label="Text effect (pro)" description="Text effect" default="chars_rand" disabled="true">	
+			<option value="lines_asc">by lines ascending</option>
+			<option value="lines_rand">by lines descending</option>
+			<option value="lines_center">by lines center to edge</option>
+			<option value="lines_edge">'by lines edge to center</option>
+			<option value="words_asc">by words ascending</option>
+			<option value="words_desc">by words descending</option>
+			<option value="words_rand">by words random</option>
+			<option value="words_center">by words center to edge</option>	
+			<option value="words_edge">by words edge to center</option>	
+			<option value="chars_asc">by chars ascending</option>	
+			<option value="chars_desc">by chars descending</option>	
+			<option value="chars_rand">by chars random</option>	
+			<option value="chars_center">by chars center to edge</option>	
+			<option value="chars_edge">by chars edge to center</option>	
+		</field>	
+	</fieldset>
+</form>

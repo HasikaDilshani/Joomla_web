@@ -1,0 +1,121 @@
+/* ============ CONTENT MODULE ============ */
+ul {
+	&.newsfeed,
+	&.archive-module,
+	&.relateditems,
+	&.categories-module,
+	&.category-module,
+	&.mostread,
+	&.latestnews,
+	&.latestusers {
+		@include rtl-padding-left(15px);
+		margin: 0;
+		li {
+			line-height: 1.5;
+			list-style-type: initial;
+			a{				
+				text-decoration: none;
+			}
+		}
+	}
+	&.newsfeed {
+		padding: 0;
+		.lead {
+			font-size: 14px;
+			margin: 0 0 10px;
+			font-weight: normal;
+		}
+		li {
+			line-height: 21px;
+			list-style: none;
+			.feed-link {
+				margin: 15px 0 3px;
+				display: block;
+				font-weight: bold;
+			}
+		}
+	}
+	&.latestnews li{
+		list-style-type: none;
+	}
+	&.categories-module {
+		ul {
+			@include rtl-padding-left(15px);
+			li {
+				//p,
+				//:not(a) {
+				//	color: #4b5f74;
+				//}
+			}
+		}
+		h4,h5,h6 {
+			font-weight: normal;
+			font-size: 14px;
+			margin: 10px 0 0;
+		}
+		p {
+				margin: 0;
+			}
+	}
+}
+.newsflash {
+	.introtext {
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.newsflash-item {
+		padding: 15px;
+		border: 1px solid #D1D6DE;
+		margin-bottom: 5px;
+		overflow: hidden;
+		img {
+			margin: -15px -15px 0;
+			width: calc(100% + 30px);
+			max-width: calc(100% + 30px);
+		}
+	}
+}
+.btn.readmore {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ 
+ /* Articles - Category Module */
+ ul.category-module {
+ 	li{
+ 		list-style-type: none;
+ 		border-bottom: 1px solid #ebebeb;
+ 		padding: 20px 0;
+ 		a.mod-articles-category-title {
+ 			display: block;
+ 			font-weight: bold;
+ 			line-height: 1.5;
+ 			margin-bottom: 10px;
+ 		}
+ 		&:first-child{
+ 			padding-top: 0;
+ 		}
+ 		&:last-child{
+ 			border-bottom: none;
+ 			padding-bottom: 0;
+ 		}
+ 		p.mod-articles-category-introtext{
+ 			margin-bottom: 15px;
+ 		}
+ 		span{
+ 			font-size: 12px;
+ 			color: #2d2d2d;
+ 			line-height: 1;
+ 			&[class*='mod-articles-category-']:after{
+ 				content: '\00b7'; 
+ 				font-size: 21px;
+ 				vertical-align: middle;
+
+ 			}
+ 			&[class*='mod-articles-category-']:last-child:after{
+ 				display: none;
+ 			}
+ 		}
+ 	}
+ }

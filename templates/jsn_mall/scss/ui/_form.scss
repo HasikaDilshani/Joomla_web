@@ -1,0 +1,73 @@
+label{
+	font-weight: normal;
+	span.star{
+		color: #F95050;
+	}
+}
+select[multiple], select[size],
+select, textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"]{
+	height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #4a4a4a;
+    background-image: none;
+    background-color: #fff;
+    border: solid 1px #dbe1e7;
+    transition: border-color ease-in-out .15s;
+    outline: 0;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    &:focus{
+    	border-color: #4a90e2;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        
+    }
+    &[aria-invalid="true"]{
+    	border-color: #F95050;
+    }
+}
+select option{
+    background-color: #fff;
+    color: #000;
+}
+input[type="text"],textarea{
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #bebebe;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #bebebe;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #bebebe;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #bebebe;
+    }
+}
+textarea {
+	height: auto;
+}
+
+input[disabled], input[readonly], select[disabled], select[readonly], textarea[disabled], textarea[readonly]{
+    color: #b3b3b3;
+    background-image: none;
+    background-color: #f0f2f5;
+    border: 1px solid #d1d6de;  
+    cursor: not-allowed;
+    box-shadow: none;
+}

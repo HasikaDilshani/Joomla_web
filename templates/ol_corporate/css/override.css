@@ -1,0 +1,115 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Sboost Framework   
+# ---------------------------------------------------------------
+# Author - olwebdesign http://www.olwebdesign.com
+# Copyright (C) 2008 - 2017 olwebdesign.com. All Rights Reserved.
+# Websites: http://www.olwebdesign.com
+-----------------------------------------------------------------*/
+
+body{font-size:13px;}
+#wrapper, #bottomspot, .mx-base {width: 960px;} 
+#tophead, #bottsite, #header, #wrapper, #bottomspot {min-width: 960px; margin: 0 auto}
+#mx-leftcol {width: 25%} 
+#mx-rightcol { width: 27%} 
+#mx-sideleft {width: 20%}
+#mx-sideright { width: 30%}
+h1,h2,h3,h4, .very_big_white, .big_black{ font-family: 'Lato', sans-serif;font-weight:300;}
+
+#bottsite {  background-color: #343434; color: #828b95; padding: 20px 0px; }
+#bottsite h3 {  color: #f1f1f1; font-size: 24px; padding-bottom: 6px; border-bottom: 1px solid #999;}
+#bottsite a {  color: #ccc; }
+.jul-formregistration, .jul-formlogin { color: #222;}	
+.mx_date { padding: 5px 0px;}
+#tophead { color: #f1f1f1; padding: 45px 0px;}
+#mx-coce { color: #222; background-color: #f6f6f6; padding: 15px 0px;}
+#mx-coceb { color: #f1f1f1; background-color: #333; padding: 45px 0px;}
+#mx-advert {  padding: 45px 0px;}
+#menuout .mx-inner,
+#mx-banner .mx-inner, #mx-header .mx-inner, #mx-top .mx-inner, #mx-bottom .mx-inner, #mx-section .mx-inner {padding:0;}
+#mx-bottom {padding: 20px; text-align: center;}
+#mx-search { height: 46px;}
+#mx-header {background-color: rgba(255,255,255,0.9);}
+#mx-bottom a{  background: transparent;}
+#mx-bottom li a{ padding: 7px 0px; border-bottom: 1px solid #68717b;}
+#mx-bottom li a:hover{  color: 1px solid #68717b;}
+#bottomspot .mx-inner {padding:0;}
+#mx-mainsite { margin: 10px auto; background-color:  rgba(255,255,255,0.9);
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2);}
+.mx_date{float:left;margin-top:8px}
+.form-actions{padding:2px 4px 2px;margin-top:5px;margin-bottom:5px;background: transparent;border-top:1px solid #fff;*zoom:1;}	
+#mx-pos {position: relative; float: left; padding-top: 10px; font-size: 13px; width: 50%;}
+#mx-pos .mod-block{padding: 0px;}
+#topcol { padding-top: 10px; color:#fff;  background-color:rgba(0,0,0,0.65) !important;}	
+.mx-base{position: relative;}
+#hormenu ul li .submenu-inner,#sublevel ul li .submenu-inner { padding: 3px; margin: 1px 3px 3px 3px; border: 1px solid #ccc;
+	box-shadow:0 0 3px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 0 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.1);}
+#nl-name, #nl-email{padding: 5px !important;}
+#nl-submit input {padding: 1px !important;}
+input{width:90%;}
+textarea{width:98%;}
+.quick_contact input{width:80%;}
+#contact-form input{width:40%;}
+#user-registration input, #member-registration input, .login input{width:230px;}
+.pagenav a,.pager a{display:inline-block;padding:4px 14px;background-color:#fff;border:1px solid #ddd;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#fafafa; border-bottom:1px solid #dadada;
+	background-image: -webkit-linear-gradient(top,  #fff, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+	background-image: -ms-linear-gradient(top, #fff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #fff, #e6e6e6);}
+.pager a:hover{text-decoration:none;background:#f5f5f5; border-bottom:1px solid #dadada;
+	background-image: -webkit-linear-gradient(top,  #e6e6e6, #fff);
+	background-image: -moz-linear-gradient(top, #e6e6e6, #fff);
+	background-image: -ms-linear-gradient(top, #e6e6e6, #fff);
+	background-image: -o-linear-gradient(top, #e6e6e6, #fff);}
+a#pagetop{float:right;padding: 4px 10px;}	
+a#valdate{  font-size: 10px;padding: 2px 5px; }	
+.newsletter-signup input[type="text"] {
+    width: 140px !important;
+}	
+.jlogin1 {float:left;width:40%;margin-right:12px;}
+.jlogin2 {float:left;width:50%;margin-top:14px;color:#999;}
+.jlogintext {float:left;margin:0 12px 12px 0;}
+
+.contactForm legend  { font-size: 12px !important;}
+#mx-rightcol .control-group { font-size: 12px !important; }
+
+#mx-rightcol input { width: 95% !important;}
+.btn-primary {
+  background-image: -webkit-linear-gradient(top, #999 0%, #555 100%);
+  background-image: linear-gradient(to bottom, #999 0%, #555 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#999', endColorstr='#555', GradientType=0);
+  border-color: #999;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.gallery  {
+    margin: 0;
+  }
+  @media (max-width: 767px) {
+body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  } 
+.tab .tab-content {
+  margin-top: -5px;
+} 
+.social-employee li {
+    height: 20px !important;
+}	
+a{color:#EB540A}
+a:hover,a:active,a:focus{color:#585858}
+/*main menu*/
+#mx-bottom a:hover{color:#333 }
+.colors, #mx-bottom, #tophead {background-color:#EB540A;color: #fff;}
+.btn.btn-setcolor, .btn.btn-setcolor.dark, #mx-top-menu li a{background-color:#EB540A;color: #fff;}
+.title-line-4.line-color {background-color:#EB540A;}
+#icon-boxes .s-overlay, #icon-boxes .s-bottom > .s-top {background-color:#EB540A !important;}

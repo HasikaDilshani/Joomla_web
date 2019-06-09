@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>jsn_mall</name>
+	<creationDate>02/01/2019</creationDate>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>www.joomlashine.com</authorUrl>
+	<copyright>Copyright (C) 2018-2016 JoomlaShine.com. All Rights Reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>1.0.0</version>
+	<description>TPL_MALL_XML_DESCRIPTION</description>
+	<group>sunfw</group>
+	<identifiedName>tpl_mall</identifiedName>
+	<edition>DEVELOPER</edition>
+	<features>
+		<feature name="custom_404" enabled="yes"/>
+	</features>	
+	<files>
+		<folder>css</folder>
+		<folder>structures</folder>
+		<folder>scss</folder>
+		<folder>html</folder>
+		<folder>images</folder>	
+		<folder>backups</folder>
+		<folder>styles</folder>	
+		<folder>layouts</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>assets</folder>
+		<folder>module-styles</folder>
+		<folder>niches</folder>
+		<folder>install</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template.checksum</filename>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>contact</position>
+		<position>google-map</position>
+		<position>footer1</position>
+		<position>footer2</position>
+		<position>footer3</position>
+		<position>footer4</position>
+		<position>search-404</position>
+		<position>logo-404</position>
+		<position>debug</position>
+		<position>right</position>
+		<position>left</position>
+		<position>innerright</position>
+		<position>innerleft</position>
+		<position>top1</position>
+		<position>content-inner</position>
+		<position>promo</position>
+		<position>content-top</position>
+		<position>content-top-below</position>
+		<position>content-bottom</position>
+		<position>content-bottom-below</position>
+		<position>main-body-top</position>
+		<position>main-body-bottom</position>
+		<position>bottom</position>
+		<position>bottom-1</position>
+		<position>bottom-2</position>
+		<position>breadcrumbs</position>
+		<position>footer</position>
+		<position>user-5</position>
+		<position>user-6</position>
+		<position>user-7</position>
+		<position>user-top</position>
+		<position>toolbar</position>
+		<position>content-top-over</position>
+		<position>bottom-3</position>
+		<position>bottom-4</position>
+		<position>top-bar</position>
+		<position>stick-lefttop</position>
+		<position>stick-righttop</position>
+		<position>stick-leftmiddle</position>
+		<position>stick-rightmiddle</position>
+		<position>stick-leftbottom</position>
+		<position>stick-rightbottom</position>
+	<position>top-promo</position></positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_jsn_mall.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_jsn_mall.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.tpl_jsn_mall.ini</language>
+		<language tag="it-IT">it-IT/it-IT.tpl_jsn_mall.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced"/>
+		</fields>
+	</config>
+</extension>

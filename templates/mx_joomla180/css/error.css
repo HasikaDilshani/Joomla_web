@@ -1,0 +1,35 @@
+
+* {	font-family: arial, helvetica, sans-serif;font-size: 12px;}
+
+html {height: 100%;margin-bottom: 1px;}
+
+body {margin: 0px;padding: 0px;height: 100%;margin-bottom: 1px;background: #FFFFFF;font-family: arial, helvetica, sans-serif;font-weight: normal;padding-top: 0px;margin-top: 0px;font-size:12px;}
+
+.error {margin-left: auto;margin-right: auto;}
+
+table, td, th, div, pre, blockquote, ul, ol, dl, address,.componentheading,.contentheading,.contentpagetitle,.sectiontableheader,.newsfeedheading {font-family: arial, helvetica, sans-serif;font-weight: normal;}
+
+/*style*/
+#error-container {color: #5F6565;width:60%;margin:0 auto;}
+#error-container a {color: #999; }
+#error-type { color: #336699; font-size: 170px;text-align:center;margin:0;
+    text-shadow: 5px 4px 0px #fff, 10px 9px 0px rgba(0,0,0,0.15);}
+#error-message {color: #900;font-size:50px;text-align:center;margin:0 0 10px 0;text-shadow: 2px 1px 0px #fff, 5px 5px 0px rgba(0,0,0,0.15);}
+
+#content-left {width:40%;float:left;margin-bottom:20px;}
+#content-right {width:40%;float:right;margin-bottom:20px;}
+#error-info {clear:both;background:#f4f4f4;padding:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

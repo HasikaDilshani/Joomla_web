@@ -1,0 +1,39 @@
+/*!
+ * JoomlaShine FW
+ */
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "vars/var";
+@import "../assets/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "mixins/mixins";
+
+// Module and Layout
+@import "ui/form";
+@import "ui/module-style";
+@import "ui/pagination";
+@import "ui/breadcrumb";
+@import "ui/utility";
+@import "ui/typography";
+@import "ui/user";
+@import "ui/content-module";
+@import "ui/display-module";
+@import "ui/navigation";
+@import "ui/contact";
+
+@import "joomla/layout";
+@import "joomla/items";
+@import "joomla/modules";
+@import "joomla/menu";
+@import "joomla/megamenu";
+@import "joomla/custom";
+@import "joomla/used";
+@import "joomla/offcanvas";
+@import "joomla/form";
+@import "joomla/error";
+@import "joomla/offline";
+@import "joomla/contact";
+@import "joomla/user";
+@import "joomla/responsive";
+@import "joomla/print";
+@import "eshop/com_eshop.scss";

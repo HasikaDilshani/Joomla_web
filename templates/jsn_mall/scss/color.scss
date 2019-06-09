@@ -1,0 +1,175 @@
+/* ============================ */
+$main-color: false !default;
+@if($main-color != false) {
+	.sunfw-content { 
+		.main-color{
+			color: $main-color;
+		}
+		.bg-main-color{
+			background: $main-color;
+		}
+	}
+	ul.nav.menu li a:hover{
+		color: $main-color;
+	}
+	.item-page.edit #com-content-formTabs > li {
+		&.active {
+			> a:hover,
+			> a {
+				border-top-color: $main-color;
+			}
+		}
+	}
+	.text-main-color,
+	.module-style[class*='module-style-'] .module-body a:hover{
+		color: $main-color;
+	}
+	.label-info[href]:hover, .label-info[href]:focus,
+	.content_rating + form input[name="submit_vote"] {
+		background: $main-color;
+	}
+	.color-img img {
+		background-color: $main-color;
+	}
+	.bg-main-color {
+		.jsn-es-background {
+			background-color: $main-color !important;
+		}
+	}
+	ul	{
+		&.nav[class*='menu-treemenu'] {
+			li {
+				&.active,
+				&.current {
+					> a, > span.nav-header {
+					   color: $main-color;
+					}
+				}
+			}
+		}
+	}
+	.text-main-color-hover:hover {
+		color: $main-color !important;
+	}
+	.sunfw-view-product #eshop-main-container .product-info .product-price h2,
+	ul.nav.menu li span.nav-header:hover{
+		color: $main-color;
+	}
+	.eshop-product.featured-product.slider-product ul.slick-dots li.slick-active button,
+	#products-list-container.list .eshop-buttons a.btn:hover,
+	.btn.btn-primary:active{
+		background: $main-color;
+	}
+	.btn.btn-plain:hover {
+		color: $main-color;
+	}
+	.page-header h2 a:hover,
+	div.pagination ul.pagination li.active a,div.pagination ul.pagination li:hover a {
+		color: $main-color;
+	}
+	.blog-featured [class*='leading-'] .readmore a.btn-default, .blog-featured .item[class*="column-"] .readmore a.btn-default, .blog [class*='leading-'] .readmore a.btn-default, .blog .item[class*="column-"] .readmore a.btn-default {
+		color: $main-color;
+	}
+	// Custom for Educo theme    
+    .breadcrumb li a, .breadcrumb li:not(.active) span{
+    	color: $main-color;
+    }
+    .sunfw-link{
+      	background-color: $main-color;
+    }
+    .highlighted{
+    	background: $main-color;
+    }
+    table tr > th > a,table tr > td > a{
+    	color: $main-color;
+    }
+	#eb .eb-entry-author-recents a,
+    .login-nav .sunfw-login-nav .nav a{
+    	color: $main-color;
+    }
+	.educo-tabs > nav > a[data-active="true"],.educo-tabs > nav > a:hover,
+    label span.star,.registration #member-registration .control-group .control-label span.spacer strong.red,
+	.contact-category ul [class*="span"].list-title a,
+	.search .search-results .result-title a	{
+	    color: $main-color;
+	}
+	.module-style.plain-box-3 .module-title{
+		border-bottom: 1px solid $main-color;
+	}
+	.b-testimonial:after{
+	  	background-color: $main-color;
+	}
+	.b-features-img picture:first-child:after{
+		background: rgba($main-color, 0.6) !important;
+	}
+	#eb .eb-blog-grid-showcase-control .btn-default:hover, #eb .eb-blog-grid-showcase-control .btn-default:focus,
+	.normal-link:hover{
+		color: $main-color !important;
+	}
+	.jsn-uniform.jsn-master .jsn-bootstrap .jsn-form-content span.required{
+		color: $main-color;
+	}
+	.educo-recruit > div .accordion__header span{
+		color: $main-color;
+	}
+	.footer-social.social li a:hover i{
+		box-shadow: inset 0 -2px 0 0  $main-color;
+	}
+	@media (max-width: 768px) {
+		nav.navbar.sunfw-menu-head ul.navbar-nav {
+			> li {
+				&:hover,
+				&.active {
+					> a {
+						color: $main-color;
+					}
+				}
+			}
+		}
+	}
+
+	.jsn-es-item.btn-primary div.item-background{
+		background-color: $main-color !important;	
+		transition: all 0.3s ease-in-out;	
+	}
+	.jsn-es-item.btn-primary a.item-container:hover > div.item-background{
+		background-color: darken($main-color, 6%) !important;
+	}	
+	.pages-megamenu a:hover,.pages-megamenu a:focus{
+		color: $main-color !important;
+		text-decoration: none;
+	}
+	.type-1st-tabs > nav > a:hover,	.type-1st-tabs > nav > a[data-active="true"],
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+		color: $main-color;
+	}
+}
+/* ============================ Sub Color ============================ */
+$sub-color: false !default;
+@if($sub-color != false){
+
+}
+
+@if($sub-color != false) and ($main-color != false) {
+	.sunfw-content { 
+		.eshop-cart .eshop-content .checkout > a,
+		.bg-mix-color, .btn-primary, .type-1st-form button[type="submit"] {
+			background: linear-gradient(to right, $sub-color, $main-color);
+		}
+		.eshop-cart .eshop-content .checkout > a:hover,
+		.bg-mix-color:hover, .btn-primary:hover, .type-1st-form button[type="submit"]:hover {
+			background: linear-gradient(to right, $main-color, $sub-color);
+		}
+	}
+	#products-list-container.grid .ajax-block-product .eshop-buttons .eshop-cart-area a.btn[class*="btn-"] {
+		background: linear-gradient(to right, $sub-color, $main-color);
+		&:hover {
+			background: linear-gradient(to right, $main-color, $sub-color);
+		}
+	}
+	.sunfw-content .text-mix-color {
+		&:before, &:after {
+			border-color: lighten($main-color, 3%);
+		}
+	}
+}

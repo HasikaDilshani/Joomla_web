@@ -1,0 +1,198 @@
+/*!
+ * Sun Framework
+ * Copyright 2016 Joomlashine.
+ * @file _modules.scss
+ */
+
+
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+/* .sunfw-breadcrumb {
+  padding: 40px 0;
+  .breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    > .active {
+      color: #FFF;
+    }
+  }
+} */
+
+//
+// Menu Styles
+// --------------------------------------------------
+
+ul.nav > li > a i.fa {
+  padding-right: 5px;
+}
+.sunfw-direction-rtl ul.nav > li > a i.fa {
+  padding-right: 0;
+  padding-left: 5px;
+}
+
+// Search Module
+.search.search-module button{
+  margin-top: 8px;
+}
+
+//
+// Front end edit
+// --------------------------------------------------\
+/* 
+.edit {
+  #adminForm {
+    .btn-toolbar {
+      padding-bottom: 10px;
+    }
+    fieldset {
+      ul.nav-tabs {
+        > li > a {
+          display: block !important;
+        }
+      }
+      .tab-content {
+        padding-top: 15px;
+        .control-label {
+          > label {
+            display: inline-block !important;
+            padding-top: 10px;
+          }
+        }
+        #jform_state-lbl {
+          padding-top: 10px;
+        }
+        #jform_title {
+          margin-bottom: 10px;
+        }
+        .controls {
+          input {
+            padding: 1px 10px;
+          }
+          textarea {
+            padding: 10px;
+          }
+          .chzn-search {
+            input {
+              padding: 4px 20px 4px 5px;
+            }
+          }
+          > .chzn-container {
+            width: 250px !important;
+          }
+          .chzn-container-single .chzn-single {
+            height: 30px;
+            line-height: 29px;
+          }
+          .chzn-container-multi .chzn-choices li.search-field input[type="text"] {
+            height: 30px;
+          }
+          .input-append {
+            > input {
+              display: inline-block !important;
+            }
+            .btn {
+              padding: 7px 10px;
+              position: relative;
+              top: -1px;
+              line-height: 20px;
+              border-style: solid;
+              border-color: #CCC;
+              border-width: 1px 1px 1px 0;
+              -webkit-border-radius:0;
+              -moz-border-radius:0;
+              border-radius:0;
+            }
+            span.icon-calendar {
+              &:before {
+                content: "\f274";
+                font-family: FontAwesome;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-toolbar {
+      padding-top: 10px;
+      .btn {
+        border: 1px solid #CCC;
+      }
+    }
+  }
+}
+.sunfw-view-modules {
+  #modules-form {
+    .btn-toolbar {
+      padding-top: 10px;
+      .btn {
+        border: 1px solid #ccc;
+      }
+    }
+    .control-group {
+      padding-bottom: 10px;
+      .control-label {
+        text-align: left;
+        label {
+          display: inline-block !important;
+        }
+      }
+      .radio input[type="radio"] {
+        margin-left: 0;
+      }
+      .radio label, .checkbox label {
+        padding-right: 5px;
+      }
+      input {
+        padding: 1px 10px;
+      }
+      textarea {
+        padding: 10px;
+      }
+      .chzn-search {
+        input {
+          padding: 4px 20px 4px 5px;
+        }
+      }
+      > .chzn-container {
+        width: 250px !important;
+      }
+      .chzn-container-single .chzn-single {
+        height: 30px;
+        line-height: 29px;
+      }
+      .chzn-container-multi .chzn-choices li.search-field input[type="text"] {
+        height: 30px;
+      }
+      .input-append {
+        > input {
+          display: inline-block !important;
+        }
+        .btn {
+          padding: 5px 10px;
+          position: relative;
+          top: -1px;
+          line-height: 20px;
+          border-style: solid;
+          border-color: #CCC;
+          border-width: 1px 1px 1px 0;
+          -webkit-border-radius:0;
+          -moz-border-radius:0;
+          border-radius:0;
+        }
+        span.icon-calendar {
+          &:before {
+            content: "\f274";
+            font-family: FontAwesome;
+          }
+        }
+      }
+      .btn-toolbar {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+*/

@@ -1,0 +1,126 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template  
+# ---------------------------------------------------------------
+# Author - mixwebtemplates http://www.mixwebtemplates.com
+# Copyright (C) 2008 - 2018 mixwebtemplates.com. All Rights Reserved.
+# Websites: http://www.mixwebtemplates.com
+-----------------------------------------------------------------*/
+
+/*Module type SP_XHTML*/
+.mod-wrapper,.mod-wrapper-flat {position:relative}
+.module.menu{padding:15px}
+
+.mod-wrapper ul{list-style:none;margin:0;padding:0}
+.mod-wrapper li{background:none;font-size:12px;margin:0;padding:4px 0px}
+.mod-wrapper li li{margin-left:10px;border-bottom:0!important}
+.mod-wrapper li a{text-decoration:none}
+.mod-wrapper li:hover > a, .mod-wrapper li.active > a{text-decoration:none}
+
+/*Suffix menu*/
+.module.menu ul.menu li {padding:8px 10px;margin:0;background:none}
+.module.menu ul.menu li a {padding:0;margin:0}
+.module.menu ul.menu li:hover,
+.module.menu ul.menu li.active {background:#fbfbfb}
+.module.menu ul.menu li:hover > a {background:none}
+/*Start Module Variations*/
+
+/*Module Type Menu*/
+.mod-wrapper-menu {margin-top:8px}
+.mod-wrapper-menu h3.header{font-size:12px;font-weight:700;color:#000;margin:0;padding:2px 5px}
+.mod-wrapper-menu ul{list-style:none;margin:0;padding:0}
+.mod-wrapper-menu li{font-size:11px;display:block;text-decoration:none;margin:0;padding:4px}
+.mod-wrapper-menu li a:hover{text-decoration:underline}
+
+.white {
+	color: #333;
+	background-color: #fff;
+	margin: 0 auto 10px auto;
+	border: 1px solid #f1f1f1;
+	padding: 5px 10px;
+}
+.white:hover {
+	color: #333;
+	background-color: #f9f9f9;
+}
+.beige {
+	color: #000;
+	background-color: #e3e1df;
+	margin: 0 auto 10px auto;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+}
+
+.greys {
+	color: #333;
+	background-color: #f1f1f1;
+	margin: 0 auto 5px auto;
+	padding: 5px;
+}
+.greys:hover {
+	color: #333;
+	background-color: #ddd;
+}
+.reds {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #990000;
+	padding: 5px 10px;
+}
+.blues {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #336699;
+	padding: 5px 10px;
+}
+.greens {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #66ad43;
+	padding: 5px 10px;
+}
+.oranges {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #ff5200;
+	padding: 5px 10px;
+}
+
+.colors {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	padding: 5px 10px;
+	border: 1px solid #d7d7d7;
+}
+
+.mx-base h3::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.mx-base h3 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.dark {
+	background-color: #444;
+	margin: 0 auto 10px auto;
+	color: #ddd;
+	padding: 5px 10px;
+}
+.dark ul, .mcolor ul, .white ul {
+	padding-left: 10px;
+}
+
+.dark a, .colors a { color: #ddd !important;}
+

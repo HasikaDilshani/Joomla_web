@@ -1,0 +1,33 @@
+/* ============ LOGIN MODULE ============ */
+.sunfw-pos-left,
+.sunfw-pos-right {
+	.module-style {
+		margin-bottom: 30px;
+	}
+}
+.form-control {
+	height: auto;
+    padding: 8px 12px;
+	box-shadow: none;
+}
+.form-control,
+.input-group-addon {
+	border-color: #D1D6DE;
+	border-radius: 0;
+}
+#login-form {
+	.pretext {
+		margin-bottom: 20px;
+	}
+	.posttext {
+		margin-top: 20px;
+	}
+	ul {
+		padding: 0;
+		margin: 15px 0 0;
+		li {
+			list-style: none;
+			line-height: 27px;
+		}
+	}
+}

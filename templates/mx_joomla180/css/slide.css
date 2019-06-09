@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------
+
+# Author - mixwebtemplates http://www.mixwebtemplates.com
+# Copyright (C) 2008 - 2018 mixwebtemplates.com. All Rights Reserved.
+# Websites: http://www.mixwebtemplates.com
+-----------------------------------------------------------------*/
+
+.mx-header {
+  top: -100px;
+  -webkit-transition: top 0.8s;
+  -moz-transition: top 0.8s;
+  -o-transition: top 0.8s;
+  transition: top 0.8s;
+}
+
+#mx-header.menu-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 7000;
+  width: 100%;
+  left: 0;
+  padding: 0px;
+  background: #fff;
+  	box-shadow:0 0 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.3);
+}
+#mx-header.menu-fixed .select-menu { margin-top: 10px;}
+#mx-header.menu-fixed #hormenu, #mx-header.menu-fixed a#logo, #mx-header.menu-fixed #logo-text { padding: 0px;}
+.mx-header {
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+#logo img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-fixed #logo img {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
