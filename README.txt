@@ -56,7 +56,9 @@
 	* What's new in Joomla! 3.x: https://www.joomla.org/3
 	* What are the main differences from 2.5 to 3? https://docs.joomla.org/Special:MyLanguage/What_are_the_major_differences_between_Joomla!_2.5_and_3.x%3F
 	* How to migrate from 2.5.x to 3.x? Tutorial: https://docs.joomla.org/Special:MyLanguage/Joomla_2.5_to_3.x_Step_by_Step_Migration
-	* How to migrate from 1.5.x to 3.x? Tutorial: https://docs.joomla.org/Special:MyLanguage/Joomla_1.5_to_3.x_Step_by_Step_Migration
+	* How to migrate from 1.5.x to 3.x? Tutorial: https://docs.joomla.org/Special:MyLanguage/Joomla_1.5_to_3.x_Step_by_Step_Migrata
+	
+by jeewani
 
 12- Do you want to improve Joomla?
 	* Where to request a feature? https://issues.joomla.org
