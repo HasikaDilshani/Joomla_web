@@ -33,6 +33,8 @@
 	* The layout is controlled by templates that you can edit.
 	* There are a lot of ready-made professional templates that you can download.
 	* Check out the template management information: https://docs.joomla.org/Special:MyLanguage/Portal:Template_Management
+	
+	by Ishara Madushani
 
 8- Ready to install Joomla?
 	* Check the minimum requirements here: https://downloads.joomla.org/technical-requirements
